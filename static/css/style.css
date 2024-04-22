@@ -1,0 +1,97 @@
+*{
+    margin: 5px;
+    padding: 0;
+}
+
+/* Pseudoclase de css para la etiqueta HTML */
+:root {
+    --bg-color: rgb(27,25,25);
+    --primary-color: #b1dd00;
+    --secondary-color: #143954;
+}
+
+body{
+    background-color: var(--bg-color);
+    font-family: "Nunito Sans", sans-serif;
+}
+
+h2{
+    color: white;
+    font-size: 22px;
+}
+
+.header{
+    width: 100%;
+    background-color: #62828f;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 60px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+#banner{
+    background-image: url('../img/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+section{
+    background-color: orange;
+}
+
+.banner-css{
+    background-color: var(--bg-color);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fiesta-item-img{
+    width: 150px;
+}
+
+.fiestas-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer{
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333;
+}
+
+footer a{
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover{
+    color: blue;
+}
+
+.social-icons{
+    margin: 20px 0;
+}
