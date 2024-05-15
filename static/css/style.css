@@ -19,8 +19,12 @@ body{
 }
 
 h2{
-    color: white;
-    font-size: 22px;
+    color: #fff;
+    font-size: 2vw;
+}
+
+a{
+    text-decoration: none;
 }
 
 .header{
@@ -40,10 +44,27 @@ nav{
     height: 60px;
 }
 
+#logo{
+    font-weight: bold;
+}
+
+#logo a{
+    color: #fff;
+}
+
 .nav-links{
     display: flex;
     list-style: none;
     gap: 25px;
+}
+
+.nav-links li > a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.nav-links a:hover{
+    color: black;
 }
 
 .menu-toggle{
@@ -76,30 +97,19 @@ nav{
     display: flex;
 }
 
-@media(max-width: 760px){
-
-    .desktop-nav{
-        display: none;
-    }
-
-    .menu-toggle-icon{
-        display: block;
-    }
-}
-
 #banner{
     background-image: url('../img/banner-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 70vh;
+    height: 60vh;
+    box-shadow: inset 0 0 0 2000px rgba(84,84,84,0.5);
 }
 
-section{
-    background-color: orange;
-}
-
-.banner-css{
-    background-color: var(--bg-color);
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .banner-card{
@@ -116,6 +126,41 @@ section{
     margin-bottom: 20px;
 }
 
+#search{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-title{
+    color: white;
+    font-size: 3vw;
+}
+
+.input-search{
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    height: 50px;
+    margin: 20px 0px;
+    outline: none;
+    padding: 0px 20px;
+    width: 70%;
+    font-family: 'Nunito', sans-serif;
+}
+
+#popular h2, #top-rated, #search{
+    text-align: center;
+}
+
+#popular h2, #top-rated h2h{
+    margin: 30px 0px;
+}
+
 .btn-cac{
     background-color: var(--primary-color);
     padding: 10px;
@@ -128,27 +173,98 @@ section{
     margin: 0 auto;
 }
 
-.fiesta-item-img{
-    width: 150px;
+.fiestas-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 20px;
 }
 
-.fiestas-flex{
+.fiesta-item{
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.fiesta-item-img{
+    width: 200px;
+    height: 240px;
+}
+
+.fiestas-scroller{
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px 0px 40px 0px;
+}
+
+.fiesta-item-v2{
+    border-radius: 20px;
+    width: 170px;
+    font-size: 20px;
+    display: flex;
+    cursor: pointer;
+    margin-left: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 500ms;
+    transform-origin: center left;
+}
+
+.fiesta-item-img-v2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper{
+    box-shadow: 0 2px rgba(0,0,0,.1);
+    border-radius: 10px;
+    width: 100%;
+    min-height: calc(150px*1.5);
+    height: calc(150px*1.5);
+    overflow: hidden;
+}
+
+.fiesta-item-detail-v2{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.fiesta-item-detail-title-v2{
+    color: white;
+    font-weight: bold;
+    margin: 5px 0px 0px 0px;
+}
+
+.fiesta-item-detail-subtitle-v2{
+    color: white;
+    font-size: 12px;
+    margin: 3px 0px;
 }
 
 footer{
-    background-color: #f8f9fa;
+    background-color: #62828f;
     padding: 20px;
     text-align: center;
     font-size: 14px;
     line-height: 24px;
-    color: #333;
+    color: white;
 }
 
 footer a{
-    color: #333;
+    color: white;;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -159,4 +275,43 @@ footer a:hover{
 
 .social-icons{
     margin: 20px 0;
+}
+
+/* Diseño Responsive
+Menu Hamburguesa */
+
+@media(max-width: 1000px){
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .menu-toggle-icon{
+        display: block;
+    }
+}
+
+/* Tablets */
+
+@media screen and (min-width: 760px) and (max-width: 1000px){
+    h2{
+        font-size: 3.5vw;
+    }
+
+    .fiestas-grid{
+        grid-template-columns: repeat(2,1fr);
+        grid-row: repeat(4,1fr);
+    }
+}
+
+/* Celulares */
+
+@media screen and (max-width: 760px){
+    h2{
+        font-size: 3vw;
+    }
+
+    .fiestas-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
