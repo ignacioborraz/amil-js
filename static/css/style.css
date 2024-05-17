@@ -4,22 +4,23 @@
     box-sizing: border-box;
 }
 
-/* Pseudoclase de css para la etiqueta HTML */
-:root {
-    --bg-color: rgb(27,25,25);
+/*Pseudoclase de css para la etiqueta HTML*/
+:root{
+    --bg-color: rgb(27, 25, 25);
     --primary-color: #b1dd00;
-    --secondary-color: #143954;
-    --third-color: #62828f;
-    --bg-input-color: rgba(255,255,255,0.1);
+    --seconday-color: #143954;
+    --third-color:#62828f;
+    --bg-input-color:rgba(255,255,255,0.1);
+
 }
 
 body{
     background-color: var(--bg-color);
-    font-family: "Nunito Sans", sans-serif;
+    font-family: 'Nunito',sans-serif;
 }
 
 h2{
-    color: #fff;
+    color:#fff;
     font-size: 2vw;
 }
 
@@ -49,27 +50,28 @@ nav{
 }
 
 #logo a{
-    color: #fff;
+    color:#fff;
 }
 
 .nav-links{
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap:25px;
 }
 
 .nav-links li > a{
-    color: #FFF;
+    color:#FFF;
     text-decoration: none;
 }
 
 .nav-links a:hover{
-    color: black;
+    color:black;
 }
 
 .menu-toggle{
     display: none;
 }
+
 
 .menu-toggle-icon{
     display: none;
@@ -79,13 +81,13 @@ nav{
 }
 
 .mobile-nav{
-    display: none;
+    display:none;
     flex-direction: column;
     background-color: #62828f;
     width: 100%;
     position: absolute;
     left: 0;
-    top: 60px;
+    top:60px;
     text-align: center;
 }
 
@@ -97,16 +99,21 @@ nav{
     display: flex;
 }
 
+
+
+
 #banner{
     background-image: url('../img/banner-bg.jpg');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 75vh;
     box-shadow: inset 0 0 0 2000px rgba(84,84,84,0.5);
 }
 
+
+
 .d-flex{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -115,13 +122,25 @@ nav{
 .banner-card{
     text-align: center;
     padding: 0px 160px;
+    animation: appear 5s ease forwards;
+    opacity: 0;
 }
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
 
 .banner-card h1{
-    color: #fff;
+    color:#fff;
     font-size: 4vw;
 }
-
 .banner-card h2{
     margin-bottom: 20px;
 }
@@ -140,25 +159,27 @@ nav{
 }
 
 .input-search{
-    background-color: rgba(255,255,255,0.1);
-    border: 2px solid white;
-    border-radius: 25px;
-    color: white;
-    font-size: 16px;
-    height: 50px;
-    margin: 20px 0px;
-    outline: none;
-    padding: 0px 20px;
-    width: 70%;
-    font-family: 'Nunito', sans-serif;
-}
+background-color: rgba(255,255,255,0.1);
+border: 2px solid white;
+border-radius: 25px;
+color: white;
+font-size: 16px;
+height: 50px;
+margin: 20px 0px;
+outline: none;
+padding: 0px 20px;
+width: 70%;
+font-family: 'Nunito', sans-serif;
 
-#popular h2, #top-rated, #search{
+
+} 
+
+#proximas h2, #top-rated, #search{
     text-align: center;
 }
 
-#popular h2, #top-rated h2h{
-    margin: 30px 0px;
+#proximas h2, #top-rated h2{
+   margin: 30px 0px;
 }
 
 .btn-cac{
@@ -166,6 +187,7 @@ nav{
     padding: 10px;
     border-radius: 10px;
     color: #fff;
+   
 }
 
 .container{
@@ -190,11 +212,19 @@ nav{
     display: inline-block;
     cursor: pointer;
     transition: all 500ms;
+
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
 }
+
+.fiesta-item:hover{
+    transform: scale(1.1);
+}
+
 
 .fiesta-item-img{
     width: 200px;
-    height: 240px;
+    height: 300px;
 }
 
 .fiestas-scroller{
@@ -205,11 +235,13 @@ nav{
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px 0px 40px 0px;
+   
 }
 
 .fiesta-item-v2{
     border-radius: 20px;
     width: 170px;
+    min-width: 170px;
     font-size: 20px;
     display: flex;
     cursor: pointer;
@@ -227,13 +259,14 @@ nav{
 }
 
 .wrapper{
-    box-shadow: 0 2px rgba(0,0,0,.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
     border-radius: 10px;
     width: 100%;
     min-height: calc(150px*1.5);
     height: calc(150px*1.5);
     overflow: hidden;
 }
+
 
 .fiesta-item-detail-v2{
     align-items: flex-start;
@@ -254,6 +287,8 @@ nav{
     margin: 3px 0px;
 }
 
+
+
 footer{
     background-color: #62828f;
     padding: 20px;
@@ -264,7 +299,7 @@ footer{
 }
 
 footer a{
-    color: white;;
+    color: white;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -277,21 +312,21 @@ footer a:hover{
     margin: 20px 0;
 }
 
-/* Diseño Responsive
-Menu Hamburguesa */
+/*Diseño Responsive
+Menu Hamburguesa*/
 
-@media(max-width: 1000px){
+@media (max-width: 1000px){
 
     .desktop-nav{
         display: none;
     }
 
     .menu-toggle-icon{
-        display: block;
+        display:block;
     }
 }
 
-/* Tablets */
+/*Tablets*/
 
 @media screen and (min-width: 760px) and (max-width: 1000px){
     h2{
@@ -302,16 +337,28 @@ Menu Hamburguesa */
         grid-template-columns: repeat(2,1fr);
         grid-row: repeat(4,1fr);
     }
+
 }
 
-/* Celulares */
+/*Celulares*/
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 760px) {
     h2{
         font-size: 3vw;
     }
 
     .fiestas-grid{
         grid-template-columns: repeat(1,1fr);
+        
     }
+
 }
+
+
+
+
+
+
+
+
+
