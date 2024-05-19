@@ -7,16 +7,16 @@
 /*Pseudoclase de css para la etiqueta HTML*/
 :root{
     --bg-color: rgb(27, 25, 25);
-    --primary-color: #b1dd00;
-    --seconday-color: #143954;
-    --third-color:#62828f;
+    --primary-color: #3E065F;
+    --secondary-color: #700B97;
+    --third-color:#8E05C2;
     --bg-input-color:rgba(255,255,255,0.1);
 
 }
 
 body{
     background-color: var(--bg-color);
-    font-family: 'Nunito',sans-serif;
+    font-family: 'Kanit',sans-serif;
 }
 
 h2{
@@ -35,6 +35,12 @@ a{
     top: 0;
     left: 0;
     z-index: 9999;
+}
+
+.titles {
+    font-family: "Oregano", cursive;
+    font-weight: 700;
+    font-style: normal;
 }
 
 nav{
@@ -169,7 +175,7 @@ margin: 20px 0px;
 outline: none;
 padding: 0px 20px;
 width: 70%;
-font-family: 'Nunito', sans-serif;
+font-family: 'Kanit', sans-serif;
 
 
 } 
@@ -365,7 +371,7 @@ Menu Hamburguesa*/
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: red;
+    background-color: var(--secondary-color);
     z-index: 4;
 }
 
@@ -385,6 +391,23 @@ Menu Hamburguesa*/
     z-index: 4;
 }
 
+#scrollToTopButton{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
 
 
 
