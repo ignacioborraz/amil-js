@@ -1,0 +1,35 @@
+[
+    {
+        "artista": "Above & Beyond",
+        "origen": "Londres, Reino Unido",
+        "genero": [
+            "Trance",
+            "Trance progresivo",
+            "Vocal trance",
+            "Electro house"
+        ],
+        "descripcion": "Above & Beyond es un reconocido y prestigioso trío británico de Productores, Músicos y DJ's de los géneros Trance, Progressive, Downtempo y Alternative formado en 2000 por Jonathan 'Jono' Grant, Tony McGuinness y Paavo Siljamäki. El grupo ha sido nominado a los premios Grammy dos veces y ha adquirido gran fama y un alto renombre mundial por sus destacadas producciones, conciertos acústicos y colaboraciones con varios vocalistas, además de ser reconocidos por celebridades por fuera de la escena de la música electrónica, como Madonna, Dido, Radiohead, Coldplay, Miguel Bosé y Britney Spears debido a sus colaboraciones y remixes oficiales.",
+        "foto": "https://akamai.sscdn.co/uploadfile/letras/fotos/0/e/4/c/0e4c52e2ae1a53bf54afa3319caaf5ea.jpg"
+    },
+    {
+        "artista": "Adriatique",
+        "origen": "Zúrich, Suiza",
+        "genero": [
+            "House",
+            "Tecno"
+        ],
+        "descripcion": "Adriatique es un dúo de DJs suizo conformado por Adrian Shala y Adrian Schweizer. Varían entre el techno y el house, con aires minimalistas, estilo melódico profundo y ritmo sutil e hipnótico.",
+        "foto": "https://cordobabeat.com/wp-content/uploads/2019/12/Adriatique.jpg"
+    },
+    {
+        "artista": "Aly & Fila",
+        "origen": "El Cairo,  Egipto",
+        "genero": [
+            "Trance",
+            "Uplifting Trance",
+            "Chill Out"
+        ],
+        "descripcion": "Aly & Fila es un dúo egipcio de DJ's y productores de música trance, formado por Aly Amr Fathalah (Aly) y Fadi Wassef Naguib (Fila), ambos nacidos en 1981. Eran amigos desde la infancia, pero no fue hasta después de enamorarse de la música de Paul van Dyk cuando decidieron construir su primer estudio y empezar a hacer su propia música, a partir de 1999.",
+        "foto": "https://geo-media.beatport.com/image_size/590x404/72b54337-a2ce-4b50-82cf-0c8125c6e2ce.jpg"
+    }
+]

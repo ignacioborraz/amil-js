@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "fecha": "05-11-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av Costanera Norte y Sarmiento",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Kevin de Vries",
+        "imagenes": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": 23,
+                "hasta": 2,
+                "artista": "Bob Tosh",
+                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+            },
+            {
+                "desde": 2,
+                "hasta": 6,
+                "artista": "Kevin de Vries",
+                "avatar": "https://www.labtheclub.com/wp-content/uploads/2022/04/avatars-AV6ACpLKhLcMgavS-XgrnEA-t500x500.jpg"
+            }
+        ]
+    }
+]
