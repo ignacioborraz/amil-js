@@ -10,7 +10,7 @@ fetch("/public/events.json")
     const one = res.find((each) => each.id === Number(id));
     console.log(one);
     document.querySelector("#main").innerHTML = `
-    <img class="w-full h-400 fit my-30 break-pt-30 break-pb-30"
+    <img class="w-full h-400 fit my-30 break-pt-30 break-pb-30 grayscale"
       src="${one.imagen}" alt="${one.artista}">
     <article
       class="static break-absolute abs-left break-ml-30 break-pb-30 p-10 bg-primary flex column j-between a-center break-a-start">

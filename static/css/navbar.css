@@ -1,7 +1,7 @@
 .header {
     /* w-full bg-black flex j-center */
     width: 100%;
-    background-color: #000000;
+    background-color: #1b1919;
     display: flex;
     justify-content: center;
 }
