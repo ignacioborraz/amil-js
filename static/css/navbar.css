@@ -1,0 +1,136 @@
+.header {
+    /* w-full bg-black flex j-center */
+    width: 100%;
+    background-color: #1b1919;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    /* break-w-full flex j-between p-10 direction */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.burguer {
+    /* bg-primary h-40 m-5 w-40 round nav-show */
+    background-color: #3E065F;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.label {
+    /* w-full flex j-between a-center */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* a-center nav-hidden */
+    display: none;
+    align-items: center;
+}
+
+.logo-anchor {
+    /* bg-primary round h-40 m-5 w-40 flex j-center a-center */
+    background-color: #3E065F;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-span {
+    /* size-20 buttons ml-10 */
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}
+
+.opts {
+    /* nav-hidden direction w-full-auto */
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.link {
+    /* buttons bg-primary w-full-auto h-40 px-10 break-margin-nav round flex j-center a-center */
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    background-color: #3E065F;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.link:hover {
+    background-color: #700B97;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        width: 768px;
+        flex-direction: row
+    }
+
+    .burguer {
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .opts {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .show {
+        display: flex;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    .link {
+        width: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar {
+        width: 1200px
+    }
+}
