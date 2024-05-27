@@ -24,6 +24,7 @@
 }
 
 .flex { display: flex }
+.direction { flex-direction: column }
 .column { flex-direction: column }
 .grow { flex-grow: 1 }
 .wrap { flex-wrap: wrap }
@@ -55,6 +56,7 @@
 .abs-rigth { right: 0; top: 0 }
 
 .break-w-full { width: 100% }
+.w-full-auto { width: 100% }
 .w-full { width: 100% }
 .w-400 { width: 400px }
 .w-100 { width: 100px }
@@ -73,12 +75,16 @@
 
 .border-primary { border: #3E065F solid 10px }
 .p-10 { padding: 10px }
+.px-10 { padding-left: 10px; padding-right: 10px }
 .pt-30 { padding-top: 30px }
 .pb-30 { padding-bottom: 30px }
+.m-5 { margin: 5px }
 .m-10 { margin: 10px }
 .mt-10 { margin-top: 10px }
+.ml-10 { margin-left: 10px }
 .ml-30 { margin-left: 30px }
 .mr-30 { margin-right: 30px }
+.break-margin-nav { margin-top: 5px; margin-bottom: 5px }
 .round { border-radius: 5px }
 
 .fit { object-fit: cover }

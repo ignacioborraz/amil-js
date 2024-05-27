@@ -5,19 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="static/css/details.css">
+  <link rel="stylesheet" href="static/css/navbar.css">
   <title>Fiestas aMil</title>
 </head>
 
 <body class="flex column a-center minh-full">
-  <header class="w-full bg-white flex j-center">
-    <nav class="break-w-full flex j-between p-10">
-      <img class="bg-primary h-40 w-40 round"
+  <header class="header">
+    <nav class="navbar">
+      <img class="burguer" id="burguer"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAPhJREFUaEPtmMEOhDAIRPXMT+9Pc96N2ZNx3WAgUNrn2TrMPFrRfVvs2hfzu2F4duIQhvBkCdDSkwG92IEwhCdLgJaeDCiHlrmlVfU9Mn0RMXkx3XQYxfBguCF8A4SWHqxTw8sxEw5XLnoghouCT5OFcFrURUIQvgteVV9FUEyyImKqz0yYWdqUe95NzNLM0t8Enuxh06GQ18RnpfBDq8pItK6ZcLRw1fMwXJV8li6Es5Ku0oHwn48HfsRXteUvXWZpZunns/Rae3ik/eqphdeSJ70OayHcgZKnRgh70uuwFsIdKHlqhLAnvQ5rIdyBkqdGCHvS67D2A2vaQD0pdMqEAAAAAElFTkSuQmCC" />
-      <span>
-        <button class="buttons bg-primary w-100 p-10 round">INICIO</button>
-        <button class="buttons bg-primary w-100 p-10 round">REGISTRO</button>
-        <button class="buttons bg-primary w-100 p-10 round">CARRITO</button>
-      </span>
+      <span class="label">
+        <span class="logo">
+          <a class="logo-anchor" href="index.html">
+            <i class="size-20 fa-solid fa-champagne-glasses"></i>
+          </a>
+          <span class="logo-span">Fiestas aMil</span>
+        </span>
+        <span class="opts hide" id="opts">
+          <a class="link" href="./index.html">INICIO</a>
+          <a class="link" href="./register.html">REGISTRO</a>
+          <a class="link" href="#">CARRITO</a>
+        </span>
     </nav>
   </header>
   <main class="w-full grow bg-white">
@@ -63,12 +71,15 @@
     <span class="w-full flex j-center bg-secondary">
       <section class="flex j-evenly wrap break-w-full">
         <article class="bg-white p-10 m-10 w-400 round">
-          <img class="w-full h-400 round fit" src="https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg" alt="bob" />
+          <img class="w-full h-400 round fit" src="https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+            alt="bob" />
           <p class="titles primary size-30 center">Bob Tosh</p>
           <p class="primary size-20 center">23:00 hasta las 02:00</p>
         </article>
         <article class="bg-white p-10 m-10 w-400 round">
-          <img class="w-full h-400 round fit" src="https://www.labtheclub.com/wp-content/uploads/2022/04/avatars-AV6ACpLKhLcMgavS-XgrnEA-t500x500.jpg" alt="kevin" />
+          <img class="w-full h-400 round fit"
+            src="https://www.labtheclub.com/wp-content/uploads/2022/04/avatars-AV6ACpLKhLcMgavS-XgrnEA-t500x500.jpg"
+            alt="kevin" />
           <p class="titles primary size-30 center">Kevin Di Vries</p>
           <p class="primary size-20 center">02:00 hasta las 06:00</p>
         </article>
@@ -77,6 +88,8 @@
   </main>
 
 </body>
+<script src="https://kit.fontawesome.com/8087ddc12b.js" crossorigin="anonymous"></script>
+<script src="./static/scripts/navbar.js"></script>
 <script src="./static/scripts/details.js"></script>
 
 </html>
