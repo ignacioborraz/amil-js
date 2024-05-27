@@ -89,6 +89,9 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.link:hover {
+    background-color: #700B97;
+}
 
 @media (min-width: 768px) {
     .navbar {

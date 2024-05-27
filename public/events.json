@@ -8,7 +8,7 @@
         "dirección": "Av Costanera Norte y Sarmiento",
         "ciudad": "Ciudad Autónoma de Buenos Aires",
         "artista": "Kevin de Vries",
-        "imagenes": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -24,6 +24,11 @@
                 "tipo": "vip",
                 "precio": 50000,
                 "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
             }
         ],
         "lineup": [
@@ -37,7 +42,7 @@
                 "desde": 2,
                 "hasta": 6,
                 "artista": "Kevin de Vries",
-                "avatar": "https://www.labtheclub.com/wp-content/uploads/2022/04/avatars-AV6ACpLKhLcMgavS-XgrnEA-t500x500.jpg"
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
             }
         ]
     }
