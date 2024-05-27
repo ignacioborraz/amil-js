@@ -8,7 +8,7 @@
         "dirección": "Av Costanera Norte y Sarmiento",
         "ciudad": "Ciudad Autónoma de Buenos Aires",
         "artista": "Kevin de Vries",
-        "imagenes": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -24,20 +24,352 @@
                 "tipo": "vip",
                 "precio": 50000,
                 "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
             }
         ],
         "lineup": [
             {
-                "desde": 23,
-                "hasta": 2,
+                "desde": "23:00",
+                "hasta": "02:00",
                 "artista": "Bob Tosh",
                 "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
             },
             {
-                "desde": 2,
-                "hasta": 6,
+                "desde": "02:00",
+                "hasta": "06:00",
                 "artista": "Kevin de Vries",
-                "avatar": "https://www.labtheclub.com/wp-content/uploads/2022/04/avatars-AV6ACpLKhLcMgavS-XgrnEA-t500x500.jpg"
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+            }
+        ]
+    },{
+        "id": 2,
+        "fecha": "06-16-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Crobar",
+        "dirección": "Av. Coronel Marcelino E. Freyre",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Joris Voorn",
+        "imagen": "https://ege.electronicgroove.com/wp-content/uploads/2023/05/Joris-Voorn-Facebook.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "01:00",
+                "artista": "Soundexile",
+                "avatar": "https://telonpampeano.com.ar/images/soudexil.jpeg"
+            },
+            {
+                "desde": "01:00",
+                "hasta": "06:00",
+                "artista": "Joris Voorn",
+                "avatar": "https://www.whenwedip.com/wp-content/uploads/2020/10/Joris-Voorn.jpg"
+            }
+        ]
+    },{
+        "id": 3,
+        "fecha": "07-06-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av Costanera Norte y Sarmiento",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Innellea",
+        "imagen": "https://zero-media.s3.amazonaws.com/uploads/2019/10/Innellea.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Juan Hansen",
+                "avatar": "https://electronicgroove.com/wp-content/uploads/2023/02/Juan-Hansen-2.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Innellea",
+                "avatar": "https://i1.sndcdn.com/artworks-MMxmkAgOMXjRKPhU-2WUr6Q-t500x500.jpg"
+            }
+        ]
+    },{
+        "id": 4,
+        "fecha": "06-08-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av Costanera Norte y Sarmiento",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Massano",
+        "imagen": "https://www.milkhoneyuk.com/wp-content/uploads/2022/11/Massano-1024x683.jpeg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "22:00",
+                "hasta": "23:30",
+                "artista": "Marcelo Vasami",
+                "avatar": "https://www.amsterdam-dance-event.nl/uploads/images/artists-speakers/_900xAUTO_crop_center-center_none/13512227_10154272445371800_3724502321453925343_n_79641.jpg"
+            },{
+                "desde": "23:30",
+                "hasta": "02:00",
+                "artista": "Nicolas Rada",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/18163522-b3cd-4ffa-a31b-95eb2c723014.jpg"
+            },
+            {
+                "desde": "03:00",
+                "hasta": "06:00",
+                "artista": "Massano",
+                "avatar": "https://geo-media.beatport.com/image_size/500x500/2c872f17-da9d-4abd-92cd-83ade7ee4af1.jpg"
+            }
+        ]
+    },{
+        "id": 5,
+        "fecha": "05-11-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Crobar",
+        "dirección": "Av. Coronel Marcelino E. Freyre",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "La Blue",
+        "imagen": "https://www.telesurtv.net/__export/1502920351837/sites/telesur/img/multimedia/2017/08/16/dfwewj1u0aaikwg.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Cordoba",
+                "avatar": "https://i1.sndcdn.com/avatars-000716190202-mljbni-t240x240.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "La Cintia",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/33f2c2e0-1d28-4fea-9415-94ac5ac29106.jpg"
+            }
+        ]
+    },{
+        "id": 1,
+        "fecha": "05-11-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av Costanera Norte y Sarmiento",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Kevin de Vries",
+        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Bob Tosh",
+                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Kevin de Vries",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+            }
+        ]
+    },{
+        "id": 1,
+        "fecha": "05-11-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av Costanera Norte y Sarmiento",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Kevin de Vries",
+        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Bob Tosh",
+                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Kevin de Vries",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+            }
+        ]
+    },{
+        "id": 1,
+        "fecha": "05-11-2024",
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av Costanera Norte y Sarmiento",
+        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "artista": "Kevin de Vries",
+        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Bob Tosh",
+                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Kevin de Vries",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
             }
         ]
     }

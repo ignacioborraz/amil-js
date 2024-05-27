@@ -4,8 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="static/css/details.css">
+  <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="static/css/navbar.css">
+  <link rel="stylesheet" href="static/css/details.css">
+  <link rel="stylesheet" href="static/css/footer.css">
   <title>Fiestas aMil</title>
 </head>
 
@@ -28,65 +30,33 @@
         </span>
     </nav>
   </header>
-  <main class="w-full grow bg-white">
-    <span class="w-full flex j-center bg-secondary">
-      <section id="details" class="break-w-full relative pb-30 pt-30 break-pb-0 break-pt-0">
-        <img class="w-full h-400 fit my-30 break-pt-30 break-pb-30"
-          src="https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg" alt="kevin">
-        <article
-          class="static break-absolute abs-left break-ml-30 break-pb-30 p-10 bg-secondary flex column j-between a-center break-a-start">
-          <p class="titles size-40">Kevin Di Vries</p>
-        </article>
-        <article
-          class="static break-absolute abs-rigth break-mr-30 break-pt-30 p-10 bg-secondary flex column j-between a-center break-a-end">
-          <p class="titles size-30">Mandarine Tent</p>
-          <p class="titles size-20">11-05-2024</p>
-        </article>
+  <main class="w-full grow bg-black">
+    <span class="w-full flex j-center bg-primary">
+      <section class="break-w-full relative pb-30 pt-30 break-pb-0 break-pt-0" id="main">
       </section>
     </span>
     <span class="w-full flex j-center">
-      <section class="flex j-evenly wrap break-w-full">
-        <article class="border-primary p-10 m-10 w-400 round">
-          <p class="black size-20 round">EARLY TICKET - $20.000</p>
-          <p class="black size-16 round">Disponibles: 20.000</p>
-          <button class="bg-primary size-16 p-10 mt-10 buttons round">Comprar!</button>
-        </article>
-        <article class="border-primary p-10 m-10 w-400 round">
-          <p class="black size-20 round">EARLY TICKET - $20.000</p>
-          <p class="black size-16 round">Disponibles: 20.000</p>
-          <button class="bg-primary size-16 p-10 mt-10 buttons round">Comprar!</button>
-        </article>
-        <article class="border-primary p-10 m-10 w-400 round">
-          <p class="black size-20 round">EARLY TICKET - $20.000</p>
-          <p class="black size-16 round">Disponibles: 20.000</p>
-          <button class="bg-primary size-16 p-10 mt-10 buttons round">Comprar!</button>
-        </article>
-        <article class="border-primary p-10 m-10 w-400 round">
-          <p class="black size-20 round">EARLY TICKET - $20.000</p>
-          <p class="black size-16 round">Disponibles: 20.000</p>
-          <button class="bg-primary size-16 p-10 mt-10 buttons round">Comprar!</button>
-        </article>
-      </section>
+      <section class="flex j-evenly wrap break-w-full m-10" id="tickets"></section>
     </span>
     <span class="w-full flex j-center bg-secondary">
-      <section class="flex j-evenly wrap break-w-full">
-        <article class="bg-white p-10 m-10 w-400 round">
-          <img class="w-full h-400 round fit" src="https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
-            alt="bob" />
-          <p class="titles primary size-30 center">Bob Tosh</p>
-          <p class="primary size-20 center">23:00 hasta las 02:00</p>
-        </article>
-        <article class="bg-white p-10 m-10 w-400 round">
-          <img class="w-full h-400 round fit"
-            src="https://www.labtheclub.com/wp-content/uploads/2022/04/avatars-AV6ACpLKhLcMgavS-XgrnEA-t500x500.jpg"
-            alt="kevin" />
-          <p class="titles primary size-30 center">Kevin Di Vries</p>
-          <p class="primary size-20 center">02:00 hasta las 06:00</p>
-        </article>
-      </section>
+      <section class="flex j-evenly wrap break-w-full" id="lineup"></section>
     </span>
   </main>
-
+  <footer>
+    <p>Nuestras redes sociales:</p>
+    <article class="social-icons">
+      <a class="icons" href="http://www.facebook.com" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+      <a class="icons" href="http://www.twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
+      <a class="icons" href="http://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+      <a class="icons" href="http://www.linkedin.com" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+    </article>
+    <article class="links-buttons">
+      <a class="links" href="">Términos y condiciones</a>
+      <a class="links" href="">Preguntas Frecuentes</a>
+      <a class="links" href="">Ayuda</a>
+      <a class="links" href=""><i class="fas fa-question-circle"></i></a>
+    </article>
+  </footer>
 </body>
 <script src="https://kit.fontawesome.com/8087ddc12b.js" crossorigin="anonymous"></script>
 <script src="./static/scripts/navbar.js"></script>
