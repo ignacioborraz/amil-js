@@ -3,7 +3,7 @@ const params = new URLSearchParams(query);
 const id = params.get("id");
 console.log(id);
 
-fetch("/public/events.json")
+fetch("./public/events.json")
   .then((res) => res.json())
   .then((res) => {
     //console.log(res);

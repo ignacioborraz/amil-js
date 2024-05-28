@@ -41,85 +41,11 @@ a{
     text-decoration: none;
 }
 
-.header{
-    width: 100%;
-    background-color: #62828f;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-}
-
 .titles {
     font-family: "Oregano", cursive;
     font-weight: 700;
     font-style: normal;
 }
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    height: 60px;
-}
-
-#logo{
-    font-weight: bold;
-}
-
-#logo a{
-    color:#fff;
-}
-
-.nav-links{
-    display: flex;
-    list-style: none;
-    gap:25px;
-}
-
-.nav-links li > a{
-    color:#FFF;
-    text-decoration: none;
-}
-
-.nav-links a:hover{
-    color:black;
-}
-
-.menu-toggle{
-    display: none;
-}
-
-
-.menu-toggle-icon{
-    display: none;
-    cursor: pointer;
-    color: white;
-    font-size: 30px;
-}
-
-.mobile-nav{
-    display:none;
-    flex-direction: column;
-    background-color: rgb(27, 25, 25);
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top:60px;
-    text-align: center;
-}
-
-.mobile-nav li{
-    padding: 10px;
-}
-
-.menu-toggle:checked~.mobile-nav{
-    display: flex;
-}
-
-
-
 
 #banner{
     background-image: url('../img/banner-bg.webp');
@@ -128,8 +54,6 @@ nav{
     height: 75vh;
     box-shadow: inset 0 0 0 2000px rgba(84,84,84,0.5);
 }
-
-
 
 .d-flex{
     display:flex;
@@ -244,6 +168,7 @@ font-family: 'Kanit', sans-serif;
 .fiesta-item-img{
     width: 200px;
     height: 250px;
+    object-fit: cover;
 }
 
 .fiestas-scroller{
@@ -304,31 +229,6 @@ font-family: 'Kanit', sans-serif;
     color: white;
     font-size: 12px;
     margin: 3px 0px;
-}
-
-
-
-footer{
-    background-color: rgb(27, 25, 25) ;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-    color: white;
-}
-
-footer a{
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-footer a:hover{
-    color: blue;
-}
-
-.social-icons{
-    margin: 10px 0 20px 0;
 }
 
 /*Diseño Responsive
