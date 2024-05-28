@@ -1,229 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="static/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap' rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oregano:ital@0;1&display=swap' rel="stylesheet">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/footer.css">
     <script src="https://kit.fontawesome.com/8087ddc12b.js" crossorigin="anonymous"></script>
     <title>Fiestas aMil</title>
-    
-</head>
-<body >
 
+</head>
+
+<body>
 
     <header class="header">
-        <nav>
-            <div id="logo">
-                <a href="index.html"><i class="fa-solid fa-champagne-glasses"></a></i>
-                <a class="logo-text" href="index.html">Fiestas aMil</a></div>
-            
-            <!-- Navegador en escritorio-->
-                <ul class="nav-links desktop-nav">
-                <li> <a href="register.html">Registrate</a></li>
-                <li><a href="#proximas">Próximas Fiestas</a></li>
-                <li ><a href="https://developer.themoviedb.org/docs/getting-started" target="_blank"> API Movie</a></li>
-             <li><a href="#" class="btn-cac">
-                <i class="fas fa-sign-in-alt"></i><span class="login-text"> Iniciar Sesión</span></a></li>
-            </ul>
-
-            <!-- Menu Hamburguesa-->
-            <input type="checkbox"  id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-toggle-icon">
-                <i class="fas fa-bars"></i>
-            </label>
-            <ul class="nav-links mobile-nav">
-                <li> <a href="register.html">Registrate</a></li>
-                <li>Próximas Fiestas</li>
-                <li ><a href="https://developer.themoviedb.org/docs/getting-started" target="_blank"> API Movie</a></li>
-             <li><a href="#" class="btn-cac">Iniciar Sesión</a></li>
-            </ul>
+        <nav class="navbar">
+            <img class="burguer" id="burguer"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAPhJREFUaEPtmMEOhDAIRPXMT+9Pc96N2ZNx3WAgUNrn2TrMPFrRfVvs2hfzu2F4duIQhvBkCdDSkwG92IEwhCdLgJaeDCiHlrmlVfU9Mn0RMXkx3XQYxfBguCF8A4SWHqxTw8sxEw5XLnoghouCT5OFcFrURUIQvgteVV9FUEyyImKqz0yYWdqUe95NzNLM0t8Enuxh06GQ18RnpfBDq8pItK6ZcLRw1fMwXJV8li6Es5Ku0oHwn48HfsRXteUvXWZpZunns/Rae3ik/eqphdeSJ70OayHcgZKnRgh70uuwFsIdKHlqhLAnvQ5rIdyBkqdGCHvS67D2A2vaQD0pdMqEAAAAAElFTkSuQmCC" />
+            <span class="label">
+                <span class="logo">
+                    <a class="logo-anchor" href="index.html">
+                        <i class="size-20 fa-solid fa-champagne-glasses"></i>
+                    </a>
+                    <span class="logo-span">Fiestas aMil</span>
+                </span>
+                <span class="opts hide" id="opts">
+                    <a class="link" href="./index.html">INICIO</a>
+                    <a class="link" href="./register.html">REGISTRO</a>
+                    <a class="link" href="#">CARRITO</a>
+                </span>
         </nav>
     </header>
 
     <main>
         <section id="banner" class="d-flex">
             <div class="banner-card container">
-            <h1 class="titles">BIENVENIDXS A FIESTAS aMIL</h1> <br>
-            <h2 class="titles">¡TU SITIO FAVORITO DE FIESTAS!</h2>
-     <a href="register.html" class="btn-cac"> Registrate</a>
-    </div>
-    </section>
-<section id="search">
-    <h2>¿Qué DJ estás buscando para ver?</h2>
-<input type="text" class="input-search" placeholder="Buscar...">
-</section>
+                <h1 class="titles">BIENVENIDXS A FIESTAS aMIL</h1> <br>
+                <h2 class="titles">¡TU SITIO FAVORITO DE FIESTAS!</h2>
+                <a href="register.html" class="btn-cac"> Registrate</a>
+            </div>
+        </section>
+        <section id="search">
+            <h2>¿Qué fiesta estás buscando para asistir?</h2>
+            <input type="text" class="input-search" placeholder="Buscar...">
+        </section>
 
-<section id="proximas" class="container">
-    <h2 class="h2-subtitle">Próximas Fiestas</h2>
+        <section id="proximas" class="container">
+            <h2 class="h2-subtitle">Próximas Fiestas</h2>
 
-    <div id="proximas-list" class="fiestas-grid">
+            <div id="events" class="fiestas-grid">
 
-        <div class="fiesta-item" id="fiesta1">
-        <a href="detail-fiesta.html" >
+                <!--       <div class="fiesta-item" id="fiesta1">
+        <a href="details.html" >
             <img src="./static/img/24-mayo.png" alt="Juan Hansen" height="224px" class="fiesta-item-img">
             <div class="cuadrado"><span class="day">24</span><span class="month">Mayo</span></div>
         </a>
         </div>
 
         <div class="fiesta-item" id="fiesta2">
-            <a href="detail-fiesta.html">
+            <a href="details.html">
                 <img src="./static/img/25-mayo.jpg" alt="Miss Monique" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">25</span><span class="month">Mayo</span></div>
             </a>
         </div>
 
         <div class="fiesta-item" id="fiesta3">
-            <a href="detail-fiesta.html">
+            <a href="details.html">
                 <img src="./static/img/15-junio.jpg" alt="Airbag" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">15</span><span class="month">Junio</span></div>
             </a>
         </div>
 
         <div class="fiesta-item" id="fiesta4">
-            <a href="detail-fiesta.html">
+            <a href="details.html">
                 <img src="./static/img/15-16-junio.jpg" alt="Hernán Cattaneo" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">15 y 16</span><span class="month">Junio</span></div>
             </a>
         </div>
 
-        <div class="fiesta-item" id="fiesta6">
-            <a href="detail-fiesta.html">
+        <div class="fiesta-item" id="fiesta5">
+            <a href="details.html">
                 <img src="./static/img/6-julio.jpg" alt="Innellea" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">6</span><span class="month">Julio</span></div>
             </a>
         </div>
 
-        <div class="fiesta-item" id="fiesta7">
-            <a href="detail-fiesta.html">
+        <div class="fiesta-item" id="fiesta6">
+            <a href="details.html">
                 <img src="./static/img/19-julio.jpg" alt="Richie Hawtin" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">19</span><span class="month">Julio</span></div>
             </a>
         </div>
 
-        <div class="fiesta-item" id="fiesta8">
-            <a href="detail-fiesta.html">
+        <div class="fiesta-item" id="fiesta7">
+            <a href="details.html">
                 <img src="./static/img/20-julio.jpg" alt="Mariano Mellino" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">20</span><span class="month">Julio</span></div>
             </a>
         </div>
 
-        <div class="fiesta-item" id="fiesta7">
-            <a href="detail-fiesta.html">
+        <div class="fiesta-item" id="fiesta8">
+            <a href="details.html">
                 <img src="./static/img/18-octubre.jpg" alt="Pimpinela" class="fiesta-item-img">
                 <div class="cuadrado"><span class="day">18</span><span class="month">Octubre</span></div>
             </a>
         </div>
 
-        
-    </div>
-</section>
-
-<section id="top-rated">
-    <div class="container">
-        <h2>Lxs artistas más aclamadxs</h2>
-        <div id="top-rated-list" class="fiestas-scroller">
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-            <div class="fiesta-item-v2">
-                <div class="wrapper">
-                    <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
-                </div>
-                <div class="fiesta-item-detail-v2">
-                    <p class="fiesta-item-detail-title-v2">Miss Monique</p>
-                    <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>        
+        -->
 
 
-<footer>
-    <a href="">Terminos y condiciones</a>
-    <a href="">Preguntas Frecuentes</a>
-    <a href="">Ayuda</a>
-    <a href=""><i class="fas fa-question-circle"></i></a>
-    <div class="social-icons">
-       <a href="http://www.facebook.com"  target="_blank"> <i class="fab fa-facebook-f"></i></a>
-       <a href="http://www.twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
-       <a href="http://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
-       <a href="http://www.linkedin.com" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </section>
 
-    </div>
-    <p>2024 Codo a Codo. Todos los derechos reservados.</p>
-</footer>
+        <section id="top-rated">
+            <div class="container">
+                <h2>Lxs artistas más aclamadxs</h2>
+                <div id="top-rated-list" class="fiestas-scroller">
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/steve-aoki.jpg" alt="Steve Aoki" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Steve Aoki</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ estadounidense</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Dance Music</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/hernan-cattaneo.jfif" alt="Hernán Cattaneo"
+                                class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Hernán Cattaneo</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ argentino</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Progressive House</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/martin-garrix.png" alt="Martin Garrix" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Martin Garrix</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ neerlandés</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Big Room House</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/peggy-gou.webp" alt="Peggy Gou" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Peggy Gou</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ surcoreana</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Deep House</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/david-guetta.jpg" alt="David Guetta" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">David Guetta</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ francés</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Electro Hop</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/richie-hawtin.jpg" alt="Richie Hawtin" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Richie Hawtin</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ canadiense</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Minimal Techno</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/miss-monique.jfif" alt="Miss Monique" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Miss Monique</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ ucraniana</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Melodic Techno</p>
+                        </div>
+                    </div>
+                    <div class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="./static/img/armin-van-buuren.jpg" alt="Armin van Buuren"
+                                class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">Armin van Buuren</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ neerlandés</p>
+                            <p class="fiesta-item-detail-subtitle-v2">Trance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<button id="scrollToTopButton">&#9650;</button>
 
-<script src="./static/js/index.js"></script>
+        <footer>
+            <p>Nuestras redes sociales:</p>
+            <article class="social-icons">
+                <a class="icons" href="http://www.facebook.com" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                <a class="icons" href="http://www.twitter.com" target="_blank"> <i class="fab fa-twitter"></i></a>
+                <a class="icons" href="http://www.instagram.com" target="_blank"> <i class="fab fa-instagram"></i></a>
+                <a class="icons" href="http://www.linkedin.com" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+            </article>
+            <article class="links-buttons">
+                <a class="links" href="">Términos y condiciones</a>
+                <a class="links" href="">Preguntas Frecuentes</a>
+                <a class="links" href="">Ayuda</a>
+                <a class="links" href=""><i class="fas fa-question-circle"></i></a>
+            </article>
+        </footer>
 
-</main>
+        <button id="scrollToTopButton">&#9650;</button>
+
+        <script src="./static/js/index.js"></script>
+        <script src="./static/scripts/navbar.js"></script>
+
+    </main>
 </body>
+
 </html>
