@@ -1,7 +1,11 @@
 [
     {
         "id": 1,
-        "fecha": "05-11-2024",
+        "fecha": {
+            "dia": 11,
+            "mes": "Mayo",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Mandarine Tent",
@@ -47,7 +51,11 @@
         ]
     },{
         "id": 2,
-        "fecha": "06-16-2024",
+        "fecha": {
+            "dia": 16,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Crobar",
@@ -93,7 +101,11 @@
         ]
     },{
         "id": 3,
-        "fecha": "07-06-2024",
+        "fecha": {
+            "dia": 6,
+            "mes": "Julio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Mandarine Tent",
@@ -139,7 +151,11 @@
         ]
     },{
         "id": 4,
-        "fecha": "06-08-2024",
+        "fecha": {
+            "dia": 8,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Mandarine Tent",
@@ -190,7 +206,11 @@
         ]
     },{
         "id": 5,
-        "fecha": "05-11-2024",
+        "fecha": {
+            "dia": 15,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Crobar",
@@ -235,15 +255,19 @@
             }
         ]
     },{
-        "id": 1,
-        "fecha": "05-11-2024",
+        "id": 6,
+        "fecha": {
+            "dia": 20,
+            "mes": "Julio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
-        "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Kevin de Vries",
-        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "lugar": "Metropolitano",
+        "dirección": "Junín 501",
+        "ciudad": "Rosario",
+        "artista": "Mariano Mellino",
+        "imagen": "https://viciousmagazine.com/wp-content/uploads/2020/10/IMG_0867-768x512-1-e1624318083174.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -270,26 +294,30 @@
             {
                 "desde": "23:00",
                 "hasta": "02:00",
-                "artista": "Bob Tosh",
-                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+                "artista": "Soundexile",
+                "avatar": "https://telonpampeano.com.ar/images/soudexil.jpeg"
             },
             {
                 "desde": "02:00",
                 "hasta": "06:00",
-                "artista": "Kevin de Vries",
-                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+                "artista": "Mariano Mellino",
+                "avatar": "https://www.movement-recordings.net/images/artist-img/MarianoMellino-A.png"
             }
         ]
     },{
-        "id": 1,
-        "fecha": "05-11-2024",
+        "id": 7,
+        "fecha": {
+            "dia": 12,
+            "mes": "Julio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
-        "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
+        "lugar": "Club Morocco",
+        "dirección": "CJH4+9F",
         "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Kevin de Vries",
-        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "artista": "Matador",
+        "imagen": "https://st1.uvnimg.com/2c/22/6575907343a198f21d8a90921f73/MATADOR.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -316,26 +344,30 @@
             {
                 "desde": "23:00",
                 "hasta": "02:00",
-                "artista": "Bob Tosh",
-                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+                "artista": "Misha",
+                "avatar": "https://files.gigtown.com/e27fda959aeb48e593fa71b822a895ed_079e8dd39122a4883f85fe1026fc1d30_1428a6de33834293b198e08ee176d218.jpg"
             },
             {
                 "desde": "02:00",
                 "hasta": "06:00",
-                "artista": "Kevin de Vries",
-                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+                "artista": "Matador",
+                "avatar": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/06/22/1331802039030_2/matador"
             }
         ]
     },{
-        "id": 1,
-        "fecha": "05-11-2024",
+        "id": 8,
+        "fecha": {
+            "dia": 19,
+            "mes": "Julio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
-        "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Kevin de Vries",
-        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "lugar": "Forja",
+        "dirección": "Mauricio Yadarola 1699",
+        "ciudad": "Córdoba",
+        "artista": "Richie Hawtin",
+        "imagen": "https://es.rollingstone.com/wp-content/uploads/2022/04/Hawtin_Alex_de_Brabant_700.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -362,14 +394,14 @@
             {
                 "desde": "23:00",
                 "hasta": "02:00",
-                "artista": "Bob Tosh",
-                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+                "artista": "Fabio Florido",
+                "avatar": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/2/27/aa8mtbmmoyq0omxqo6to/fabio-florido-techno-dj"
             },
             {
                 "desde": "02:00",
                 "hasta": "06:00",
-                "artista": "Kevin de Vries",
-                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+                "artista": "Richie Hawtin",
+                "avatar": "https://www.c41magazine.com/wp-content/uploads/2023/07/RICHIE-HAWTIN_16-1.jpg"
             }
         ]
     }

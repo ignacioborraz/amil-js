@@ -19,7 +19,7 @@ fetch("./public/events.json")
     <article
       class="static break-absolute abs-rigth break-mr-30 break-pt-30 p-10 bg-primary flex column j-between a-center break-a-end">
       <p class="titles size-30">${one.lugar}</p>
-      <p class="titles size-20">${one.fecha}</p>
+      <p class="titles size-20">${one.fecha.dia} de ${one.fecha.mes} de ${one.fecha.año}</p>
     </article>
     `;
     let tickets = one.entradas
