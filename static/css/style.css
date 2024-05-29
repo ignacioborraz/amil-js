@@ -293,12 +293,12 @@ Menu Hamburguesa*/
     display: inline-block;
     position: absolute;
     overflow: hidden;
-    right: 15px;
+    right: 40px;
     color: white;
     bottom: 0;
     padding: 2px;
-    width: 100px;
-    height: 50px;
+    width: 120px;
+    height: 30px;
     text-align: center;
     background-color: var(--secondary-color);
     z-index: 4;
