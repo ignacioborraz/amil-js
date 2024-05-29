@@ -189,6 +189,22 @@
     height: 400px
 }
 
+.h-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.h-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .minh-full {
     min-height: 100vh
 }
@@ -236,6 +252,11 @@
 
 .pb-30 {
     padding-bottom: 30px
+}
+
+.break-px-30 {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .m-5 {
@@ -302,6 +323,11 @@
 
     .break-pb-0 {
         padding-bottom: 0px
+    }
+
+    .break-px-30 {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .break-pt-30 {

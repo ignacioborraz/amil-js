@@ -1,14 +1,14 @@
 const query = location.search;
 const params = new URLSearchParams(query);
 const id = params.get("id");
-console.log(id);
+//console.log(id);
 
 fetch("./public/events.json")
   .then((res) => res.json())
   .then((res) => {
     //console.log(res);
     const one = res.find((each) => each.id === Number(id));
-    console.log(one);
+    //console.log(one);
     document.querySelector("#main").innerHTML = `
     <img class="w-full h-400 fit my-30 break-pt-30 break-pb-30 grayscale"
       src="${one.imagen}" alt="${one.artista}">
