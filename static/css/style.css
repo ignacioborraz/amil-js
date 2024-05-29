@@ -289,6 +289,22 @@ Menu Hamburguesa*/
     opacity: 0.75;
 }
 
+.rectangulo {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    right: 15px;
+    color: white;
+    bottom: 0;
+    padding: 2px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    z-index: 4;
+    opacity: 0.75;
+}
+
 .day {
     font-size: 15px !important;
     font-weight: 700;

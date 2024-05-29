@@ -88,6 +88,7 @@
     align-items: center;
     margin-top: 5px;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 .link:hover {
     background-color: #700B97;
@@ -125,7 +126,6 @@
         width: auto;
         margin-left: 5px;
         margin-right: 5px;
-        text-decoration: none;
     }
 }
 
