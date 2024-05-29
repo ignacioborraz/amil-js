@@ -289,6 +289,22 @@ Menu Hamburguesa*/
     opacity: 0.75;
 }
 
+.rectangulo {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    right: 40px;
+    color: white;
+    bottom: 0;
+    padding: 2px;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    z-index: 4;
+    opacity: 0.75;
+}
+
 .day {
     font-size: 15px !important;
     font-weight: 700;
@@ -303,6 +319,7 @@ Menu Hamburguesa*/
     text-transform: uppercase;
     margin: 0 0 5px;
     z-index: 4;
+    font-weight: 700;
 }
 
 #scrollToTopButton{

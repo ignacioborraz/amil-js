@@ -1,12 +1,16 @@
 [
     {
         "id": 1,
-        "fecha": "05-11-2024",
-        "hora_inicio": "23:00",
-        "hora_cierre": "06:00",
+        "fecha": {
+            "dia": 11,
+            "mes": "Mayo",
+            "año": 2024
+        },
+        "hora_inicio": "17:00",
+        "hora_cierre": "23:59",
         "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "dirección": "Av. Costanera Norte y Sarmiento",
+        "ciudad": "CABA",
         "artista": "Kevin de Vries",
         "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
         "entradas": [
@@ -33,28 +37,88 @@
         ],
         "lineup": [
             {
-                "desde": "23:00",
-                "hasta": "02:00",
+                "desde": "17:00",
+                "hasta": "20:00",
                 "artista": "Bob Tosh",
                 "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
             },
             {
-                "desde": "02:00",
-                "hasta": "06:00",
+                "desde": "20:00",
+                "hasta": "23:59",
                 "artista": "Kevin de Vries",
                 "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
             }
         ]
     },{
         "id": 2,
-        "fecha": "06-16-2024",
+        "fecha": {
+            "dia": 24,
+            "mes": "Mayo",
+            "año": 2024
+        },
+        "hora_inicio": "21:00",
+        "hora_cierre": "05:00",
+        "lugar": "Metropolitano",
+        "dirección": "Junín 501",
+        "ciudad": "Rosario",
+        "artista": "Juan Hansen",
+        "imagen": "https://viciousmagazine.com/wp-content/uploads/2022/05/jh.png",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "21:00",
+                "hasta": "23:30",
+                "artista": "Nacho López",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/dd6e67d9-d162-4447-8953-637c1d2e89a5.jpg"
+            },
+            {
+                "desde": "23:30",
+                "hasta": "02:45",
+                "artista": "Kevin Di Serna",
+                "avatar": "https://www.lanacion.com.ar/resizer/v2/LCKY5FFVEJGRZOXUG7LAF5PH4M.jpg?auth=218adc3969377c9e760c77c8962764edfec6bc142a861734146da30d549fa37d&width=420&height=280&quality=70&smart=true"
+            },
+            {
+                "desde": "02:45",
+                "hasta": "05:00",
+                "artista": "Juan Hansen",
+                "avatar": "https://yt3.googleusercontent.com/t8CkxS6bYIXAzHS0_qI0JCuWkq01FbV5Ns1RhQmlbrfW_pmBg9f6J-Q-_oKnrdP2mODRxiKWbA=s900-c-k-c0x00ffffff-no-rj"
+            }
+        ]
+    },{
+        "id": 3,
+        "fecha": {
+            "dia": 25,
+            "mes": "Mayo",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
-        "lugar": "Crobar",
-        "dirección": "Av. Coronel Marcelino E. Freyre",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Joris Voorn",
-        "imagen": "https://ege.electronicgroove.com/wp-content/uploads/2023/05/Joris-Voorn-Facebook.jpg",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av. Costanera Norte y Sarmiento",
+        "ciudad": "CABA",
+        "artista": "Miss Monique",
+        "imagen": "https://i.ytimg.com/vi/0AhFghYZQ74/maxresdefault.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -81,70 +145,34 @@
             {
                 "desde": "23:00",
                 "hasta": "01:00",
-                "artista": "Soundexile",
-                "avatar": "https://telonpampeano.com.ar/images/soudexil.jpeg"
+                "artista": "Slot",
+                "avatar": "https://static.ra.co/images/profiles/djslot.jpg?dateUpdated=1413327416937"
             },
             {
                 "desde": "01:00",
+                "hasta": "03:00",
+                "artista": "Temple Gate",
+                "avatar": "https://ege.electronicgroove.com/wp-content/uploads/2022/01/Temple-Gate-1024x1024.jpg"
+            },
+            {
+                "desde": "03:00",
                 "hasta": "06:00",
-                "artista": "Joris Voorn",
-                "avatar": "https://www.whenwedip.com/wp-content/uploads/2020/10/Joris-Voorn.jpg"
-            }
-        ]
-    },{
-        "id": 3,
-        "fecha": "07-06-2024",
-        "hora_inicio": "23:00",
-        "hora_cierre": "06:00",
-        "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Innellea",
-        "imagen": "https://zero-media.s3.amazonaws.com/uploads/2019/10/Innellea.jpg",
-        "entradas": [
-            {
-                "tipo": "early",
-                "precio": 20000,
-                "cantidad": 20000
-            },
-            {
-                "tipo": "general",
-                "precio": 30000,
-                "cantidad": 40000
-            },
-            {
-                "tipo": "vip",
-                "precio": 50000,
-                "cantidad": 10000
-            },
-            {
-                "tipo": "backstage",
-                "precio": 100000,
-                "cantidad": 2000
-            }
-        ],
-        "lineup": [
-            {
-                "desde": "23:00",
-                "hasta": "02:00",
-                "artista": "Juan Hansen",
-                "avatar": "https://electronicgroove.com/wp-content/uploads/2023/02/Juan-Hansen-2.jpg"
-            },
-            {
-                "desde": "02:00",
-                "hasta": "06:00",
-                "artista": "Innellea",
-                "avatar": "https://i1.sndcdn.com/artworks-MMxmkAgOMXjRKPhU-2WUr6Q-t500x500.jpg"
+                "artista": "Miss Monique",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgAduOzE1aOnyCuDlHj1dq8ETgJXHAY-rf3g&s"
             }
         ]
     },{
         "id": 4,
-        "fecha": "06-08-2024",
+        "fecha": {
+            "dia": 8,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "dirección": "Av. Costanera Norte y Sarmiento",
+        "ciudad": "CABA",
         "artista": "Massano",
         "imagen": "https://www.milkhoneyuk.com/wp-content/uploads/2022/11/Massano-1024x683.jpeg",
         "entradas": [
@@ -172,13 +200,13 @@
         "lineup": [
             {
                 "desde": "22:00",
-                "hasta": "23:30",
+                "hasta": "0:30",
                 "artista": "Marcelo Vasami",
                 "avatar": "https://www.amsterdam-dance-event.nl/uploads/images/artists-speakers/_900xAUTO_crop_center-center_none/13512227_10154272445371800_3724502321453925343_n_79641.jpg"
             },{
-                "desde": "23:30",
-                "hasta": "02:00",
-                "artista": "Nicolas Rada",
+                "desde": "0:30",
+                "hasta": "03:00",
+                "artista": "Nicolás Rada",
                 "avatar": "https://geo-media.beatport.com/image_size/590x404/18163522-b3cd-4ffa-a31b-95eb2c723014.jpg"
             },
             {
@@ -190,12 +218,16 @@
         ]
     },{
         "id": 5,
-        "fecha": "05-11-2024",
+        "fecha": {
+            "dia": 15,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Crobar",
         "dirección": "Av. Coronel Marcelino E. Freyre",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
+        "ciudad": "CABA",
         "artista": "La Blue",
         "imagen": "https://www.telesurtv.net/__export/1502920351837/sites/telesur/img/multimedia/2017/08/16/dfwewj1u0aaikwg.jpg",
         "entradas": [
@@ -235,15 +267,19 @@
             }
         ]
     },{
-        "id": 1,
-        "fecha": "05-11-2024",
+        "id": 6,
+        "fecha": {
+            "dia": 16,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
-        "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Kevin de Vries",
-        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "lugar": "Crobar",
+        "dirección": "Av. Coronel Marcelino E. Freyre 3832",
+        "ciudad": "CABA",
+        "artista": "Joris Voorn",
+        "imagen": "https://ege.electronicgroove.com/wp-content/uploads/2023/05/Joris-Voorn-Facebook.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -269,27 +305,31 @@
         "lineup": [
             {
                 "desde": "23:00",
-                "hasta": "02:00",
-                "artista": "Bob Tosh",
-                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+                "hasta": "01:00",
+                "artista": "Soundexile",
+                "avatar": "https://telonpampeano.com.ar/images/soudexil.jpeg"
             },
             {
-                "desde": "02:00",
+                "desde": "01:00",
                 "hasta": "06:00",
-                "artista": "Kevin de Vries",
-                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+                "artista": "Joris Voorn",
+                "avatar": "https://www.whenwedip.com/wp-content/uploads/2020/10/Joris-Voorn.jpg"
             }
         ]
     },{
-        "id": 1,
-        "fecha": "05-11-2024",
+        "id": 7,
+        "fecha": {
+            "dia": 19,
+            "mes": "Junio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
-        "hora_cierre": "06:00",
-        "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Kevin de Vries",
-        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "hora_cierre": "05:00",
+        "lugar": "Studio Theater",
+        "dirección": "Rosario de Sta. Fe 272",
+        "ciudad": "Córdoba",
+        "artista": "Kolombo",
+        "imagen": "https://www.disfrutarosario.com/wp-content/uploads/2021/01/kolombo.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -315,27 +355,81 @@
         "lineup": [
             {
                 "desde": "23:00",
-                "hasta": "02:00",
-                "artista": "Bob Tosh",
-                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+                "hasta": "01:30",
+                "artista": "Fran Bortolossi",
+                "avatar": "https://proton-profile-images.storage.googleapis.com/avatars/avatars-z1ApwNKGoII4cnRX-w6R9ZA-t500x500.jpg"
             },
             {
-                "desde": "02:00",
-                "hasta": "06:00",
-                "artista": "Kevin de Vries",
-                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+                "desde": "01:30",
+                "hasta": "05:00",
+                "artista": "Kolombo",
+                "avatar": "https://d3vhc53cl8e8km.cloudfront.net/artists/2923/taAfVvt1R75p2Jvvnp83SLGMliIMIgE0yFfUbslV.jpeg"
             }
         ]
     },{
-        "id": 1,
-        "fecha": "05-11-2024",
+        "id": 8,
+        "fecha": {
+            "dia": 5,
+            "mes": "Julio",
+            "año": 2024
+        },
+        "hora_inicio": "22:00",
+        "hora_cierre": "05:00",
+        "lugar": "Blue Velvet",
+        "dirección": "Av. Carlos Colombres 1698",
+        "ciudad": "Rosario",
+        "artista": "Martín García",
+        "imagen": "https://ege.electronicgroove.com/wp-content/uploads/2021/11/Martin-Garcia.jpeg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "22:00",
+                "hasta": "01:00",
+                "artista": "Budakid",
+                "avatar": "https://mixmag.com.br/assets/uploads/images/Mixmag-Brazil-Cover-67-BUDAKID-2023-02.jpg"
+            },
+            {
+                "desde": "01:00",
+                "hasta": "05:00",
+                "artista": "Martín García",
+                "avatar": "https://static.ra.co/images/profiles/martingarcia.jpg?dateUpdated=1187272638407"
+            }
+        ]
+    },{
+        "id": 9,
+        "fecha": {
+            "dia": 6,
+            "mes": "Julio",
+            "año": 2024
+        },
         "hora_inicio": "23:00",
         "hora_cierre": "06:00",
         "lugar": "Mandarine Tent",
-        "dirección": "Av Costanera Norte y Sarmiento",
-        "ciudad": "Ciudad Autónoma de Buenos Aires",
-        "artista": "Kevin de Vries",
-        "imagen": "https://www.pulsomag.com/wp-content/uploads/2024/03/KevindeVries-3-392-scaled.jpg",
+        "dirección": "Av. Costanera Norte y Sarmiento",
+        "ciudad": "CABA",
+        "artista": "Innellea",
+        "imagen": "https://zero-media.s3.amazonaws.com/uploads/2019/10/Innellea.jpg",
         "entradas": [
             {
                 "tipo": "early",
@@ -362,14 +456,406 @@
             {
                 "desde": "23:00",
                 "hasta": "02:00",
-                "artista": "Bob Tosh",
-                "avatar": "https://mitatickets.com.ar/public/imgs/day-one-3-1694039427.jpg"
+                "artista": "Juan Hansen",
+                "avatar": "https://electronicgroove.com/wp-content/uploads/2023/02/Juan-Hansen-2.jpg"
             },
             {
                 "desde": "02:00",
                 "hasta": "06:00",
-                "artista": "Kevin de Vries",
-                "avatar": "https://geo-media.beatport.com/image_size/590x404/6eff5fdd-eda3-4a20-8a79-d292927e243c.jpg"
+                "artista": "Innellea",
+                "avatar": "https://i1.sndcdn.com/artworks-MMxmkAgOMXjRKPhU-2WUr6Q-t500x500.jpg"
+            }
+        ]
+    },{
+        "id": 10,
+        "fecha": {
+            "dia": 12,
+            "mes": "Julio",
+            "año": 2024
+        },
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Club Morocco",
+        "dirección": "CJH4+9F",
+        "ciudad": "CABA",
+        "artista": "Matador",
+        "imagen": "https://st1.uvnimg.com/2c/22/6575907343a198f21d8a90921f73/MATADOR.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Misha",
+                "avatar": "https://files.gigtown.com/e27fda959aeb48e593fa71b822a895ed_079e8dd39122a4883f85fe1026fc1d30_1428a6de33834293b198e08ee176d218.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Matador",
+                "avatar": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2016/06/22/1331802039030_2/matador"
+            }
+        ]
+    },{
+        "id": 11,
+        "fecha": {
+            "dia": 19,
+            "mes": "Julio",
+            "año": 2024
+        },
+        "hora_inicio": "21:00",
+        "hora_cierre": "06:00",
+        "lugar": "Forja",
+        "dirección": "Mauricio Yadarola 1699",
+        "ciudad": "Córdoba",
+        "artista": "Richie Hawtin",
+        "imagen": "https://es.rollingstone.com/wp-content/uploads/2022/04/Hawtin_Alex_de_Brabant_700.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "21:00",
+                "hasta": "23:00",
+                "artista": "Fabio Florido",
+                "avatar": "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/2/27/aa8mtbmmoyq0omxqo6to/fabio-florido-techno-dj"
+            },
+            {
+                "desde": "23:00",
+                "hasta": "01:00",
+                "artista": "Barem",
+                "avatar": "https://cordobabeat.com/wp-content/uploads/2019/04/Barem-press-kit.jpg"
+            },
+            {
+                "desde": "01:00",
+                "hasta": "03:00",
+                "artista": "Martín Huergo",
+                "avatar": "https://imgproxy.ra.co/_/quality:66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL3Byb2ZpbGVzL21hcnRpbmh1ZXJnby5qcGc_ZGF0ZVVwZGF0ZWQ9MTQ3MTg5NTUyNjY2MA=="
+            },
+            {
+                "desde": "03:00",
+                "hasta": "06:00",
+                "artista": "Richie Hawtin",
+                "avatar": "https://www.c41magazine.com/wp-content/uploads/2023/07/RICHIE-HAWTIN_16-1.jpg"
+            }
+        ]
+    },{
+        "id": 12,
+        "fecha": {
+            "dia": 20,
+            "mes": "Julio",
+            "año": 2024
+        },
+        "hora_inicio": "21:00",
+        "hora_cierre": "05:00",
+        "lugar": "Metropolitano",
+        "dirección": "Junín 501",
+        "ciudad": "Rosario",
+        "artista": "Mariano Mellino",
+        "imagen": "https://viciousmagazine.com/wp-content/uploads/2020/10/IMG_0867-768x512-1-e1624318083174.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "21:00",
+                "hasta": "00:00",
+                "artista": "John Cosani",
+                "avatar": "https://i1.sndcdn.com/artworks-aSXQ9BI6SwrwpZkD-MAuROw-t500x500.jpg"
+            },
+            {
+                "desde": "00:00",
+                "hasta": "05:00",
+                "artista": "Mariano Mellino",
+                "avatar": "https://www.movement-recordings.net/images/artist-img/MarianoMellino-A.png"
+            }
+        ]
+    },{
+        "id": 13,
+        "fecha": {
+            "dia": 21,
+            "mes": "Sept.",
+            "año": 2024
+        },
+        "hora_inicio": "22:00",
+        "hora_cierre": "07:00",
+        "lugar": "Mandarine Tent",
+        "dirección": "Av. Costanera Norte y Sarmiento",
+        "ciudad": "CABA",
+        "artista": "Adriatique",
+        "imagen": "https://static.ra.co/images/news/2018/adriatique-afterlife-ray-february-2018.jpg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "22:00",
+                "hasta": "00:00",
+                "artista": "Armonica",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6t2Z070Xs5bWA1QHhsNGAkBjPXokuA5TENQ&s"
+            },
+            {
+                "desde": "00:00",
+                "hasta": "02:00",
+                "artista": "Zamna Soundsystem",
+                "avatar": "https://imgproxy.ra.co/_/quality:66/aHR0cHM6Ly9zdGF0aWMucmEuY28vaW1hZ2VzL3Byb2ZpbGVzL3NxdWFyZS96YW1uYXNvdW5kc3lzdGVtLmpwZz9kYXRlVXBkYXRlZD0xNzEwOTMxMTQ4MDAw"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "04:00",
+                "artista": "Valerie Fox",
+                "avatar": "https://geo-media.beatport.com/image_size/590x404/b9486388-63c9-464e-9e15-39f12632802b.jpg"
+            },
+            {
+                "desde": "04:00",
+                "hasta": "07:00",
+                "artista": "Adriatique",
+                "avatar": "https://yt3.googleusercontent.com/ytc/AIdro_kUuHgzsjZnblQ3oi0JMePB3slVCJinMIUEd-Yk_q6Ecw=s900-c-k-c0x00ffffff-no-rj"
+            }
+        ]
+    },{
+        "id": 14,
+        "fecha": {
+            "dia": 11,
+            "mes": "Octubre",
+            "año": 2024
+        },
+        "hora_inicio": "23:00",
+        "hora_cierre": "06:00",
+        "lugar": "Quinta Las Rosas",
+        "dirección": "Cjón. Escorhiuela 2301",
+        "ciudad": "Mendoza",
+        "artista": "Ann Clue",
+        "imagen": "https://d3vhc53cl8e8km.cloudfront.net/artists/4170/gAj4Rhcnyb1IaF6DmliIq4MW38HYZTYXC5iD9G3k.jpeg",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "02:00",
+                "artista": "Deniz Bul",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeXN5WNlHlqJym0sCdSTVwTJPZD7KG-cpxqg&s"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Ann Clue",
+                "avatar": "https://images.squarespace-cdn.com/content/v1/52b296e1e4b0ddced612b11c/1682667997380-4330FY6DJRD5DQIH1KJ2/ANNCLUE-006.jpg"
+            }
+        ]
+    },{
+        "id": 15,
+        "fecha": {
+            "dia": 12,
+            "mes": "Octubre",
+            "año": 2024
+        },
+        "hora_inicio": "22:00",
+        "hora_cierre": "06:00",
+        "lugar": "Parque Sarmiento",
+        "dirección": "Av. Dr. Ricardo Balbín 4750",
+        "ciudad": "CABA",
+        "artista": "Boris Brejcha",
+        "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL-L0-Wt3bBsrJerEGoIU5aBGdGQ52Kkym0A&s",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "22:00",
+                "hasta": "00:00",
+                "artista": "Moritz Hofbauer",
+                "avatar": "https://i1.sndcdn.com/avatars-el5cUEVe5G2V38v4-9NYIxQ-t1080x1080.jpg"
+            },
+            {
+                "desde": "00:00",
+                "hasta": "02:00",
+                "artista": "Frieder & Jacob",
+                "avatar": "https://i1.sndcdn.com/avatars-aKN1oNs0432czGY9-WbgRUw-t240x240.jpg"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "06:00",
+                "artista": "Boris Brejcha",
+                "avatar": "https://images.pagina12.com.ar/styles/focal_content_1200x1050/public/2023-08/761385-boris-brejcha.jpg?h=06f6671c&itok=wrKIE-d7"
+            }
+        ]
+    },{
+        "id": 16,
+        "fecha": {
+            "dia": 12,
+            "mes": "Octubre",
+            "año": 2024
+        },
+        "hora_inicio": "23:00",
+        "hora_cierre": "07:00",
+        "lugar": "Movistar Arena",
+        "dirección": "Humboldt 450",
+        "ciudad": "CABA",
+        "artista": "Eric Prydz",
+        "imagen": "https://lh3.googleusercontent.com/eD9jFSlJvWdZTolny0bc5BptLL0BMJANVmbhFy4LaQykaPiHUKJBX-wXz3Rg7Xx6XfozmbbC5jIwCYhw=w1920-h800-p-l90-rj",
+        "entradas": [
+            {
+                "tipo": "early",
+                "precio": 20000,
+                "cantidad": 20000
+            },
+            {
+                "tipo": "general",
+                "precio": 30000,
+                "cantidad": 40000
+            },
+            {
+                "tipo": "vip",
+                "precio": 50000,
+                "cantidad": 10000
+            },
+            {
+                "tipo": "backstage",
+                "precio": 100000,
+                "cantidad": 2000
+            }
+        ],
+        "lineup": [
+            {
+                "desde": "23:00",
+                "hasta": "00:30",
+                "artista": "Alan Fitzpatrick",
+                "avatar": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Mayday_2015_Alan_Fitzpatrick_01.jpg"
+            },
+            {
+                "desde": "00:30",
+                "hasta": "02:00",
+                "artista": "Cristoph",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7HS1MTljbSnyrK9wZb4QHtMd_BulDzcfYUw&s"
+            },
+            {
+                "desde": "02:00",
+                "hasta": "03:30",
+                "artista": "George Fitzgerald",
+                "avatar": "https://yt3.googleusercontent.com/V-4WGMDVbPvle2kS8Y2H9q3ZnRdUh2s0BEhKoiJm0RcGqDo5b-Q1zGTpENcELVl969ClXo2w=s900-c-k-c0x00ffffff-no-rj"
+            },
+            {
+                "desde": "03:30",
+                "hasta": "06:00",
+                "artista": "Eric Prydz",
+                "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpsIhea2YEWPyGA_5NdzZ-w21dvVLNGlQ27g&s"
             }
         ]
     }

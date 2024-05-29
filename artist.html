@@ -16,19 +16,19 @@
     <nav class="navbar">
       <img class="burguer" alt="burguer" id="burguer"
         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAPhJREFUaEPtmMEOhDAIRPXMT+9Pc96N2ZNx3WAgUNrn2TrMPFrRfVvs2hfzu2F4duIQhvBkCdDSkwG92IEwhCdLgJaeDCiHlrmlVfU9Mn0RMXkx3XQYxfBguCF8A4SWHqxTw8sxEw5XLnoghouCT5OFcFrURUIQvgteVV9FUEyyImKqz0yYWdqUe95NzNLM0t8Enuxh06GQ18RnpfBDq8pItK6ZcLRw1fMwXJV8li6Es5Ku0oHwn48HfsRXteUvXWZpZunns/Rae3ik/eqphdeSJ70OayHcgZKnRgh70uuwFsIdKHlqhLAnvQ5rIdyBkqdGCHvS67D2A2vaQD0pdMqEAAAAAElFTkSuQmCC">
-      <div class="label">
-        <div class="logo">
+      <span class="label">
+        <span class="logo">
           <a class="logo-anchor" href="./index.html">
             <i class="size-20 fa-solid fa-champagne-glasses"></i>
           </a>
-          <div class="logo-span">Fiestas aMil</div>
-        </div>
-        <div class="opts hide" id="opts">
+          <span class="logo-span">Fiestas aMil</span>
+        </span>
+        <span class="opts hide" id="opts">
           <a class="link" href="./index.html">INICIO</a>
           <a class="link" href="./register.html">REGISTRO</a>
           <a class="link" href="#">CARRITO</a>
-        </div>
-      </div>
+        </span>
+      </span>
     </nav>
   </header>
   <main class="w-full grow bg-black">
@@ -36,11 +36,14 @@
       <div class="break-w-full relative pb-30 pt-30 break-pb-0 break-pt-0" id="main">
       </div>
     </div>
-    <div class="w-full flex j-center">
-      <div class="flex j-evenly wrap break-w-full m-10" id="tickets"></div>
+    <div class="w-full flex j-center pt-30 pb-30 break-px-30">
+      <div class="flex j-evenly wrap break-w-full m-10" id="details">
+      </div>
     </div>
-    <div class="w-full flex j-center bg-secondary">
-      <div class="flex j-evenly wrap break-w-full" id="lineup"></div>
+    <div class="w-full flex j-center bg-secondary pt-30 pb-30 break-px-30">
+      <div class="break-w-full m-10">
+        <div class="h-box" id="video"></div>
+      </div>
     </div>
   </main>
   <footer>
@@ -60,7 +63,7 @@
   </footer>
   <script src="https://kit.fontawesome.com/8087ddc12b.js" crossorigin="anonymous"></script>
   <script src="./static/js/navbar.js"></script>
-  <script src="./static/js/details.js"></script>
+  <script src="./static/js/artist.js"></script>
 </body>
 
 </html>
