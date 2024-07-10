@@ -39,7 +39,7 @@ def generar_vista_index():
         cursor1.execute(sql1)     
         eventos = cursor1.fetchall()
         
-        sql2 = "SELECT * FROM artistas"
+        sql2 = "SELECT * FROM artistas ORDER BY artista"
         
         cursor2 = conn.cursor()
         cursor2.execute(sql2)        
