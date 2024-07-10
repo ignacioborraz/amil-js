@@ -1,0 +1,166 @@
+[
+    {
+        "artista": "Above & Beyond",
+        "origen": "Londres, Reino Unido",
+        "nacionalidad": "inglés",
+        "genero": [
+            0,
+            1,
+            2,
+            3
+        ],
+        "descripcion": "Above & Beyond es un reconocido y prestigioso trío británico de Productores, Músicos y DJ's de los géneros Trance, Progressive, Downtempo y Alternative formado en 2000 por Jonathan 'Jono' Grant, Tony McGuinness y Paavo Siljamäki. El grupo ha sido nominado a los premios Grammy dos veces y ha adquirido gran fama y un alto renombre mundial por sus destacadas producciones, conciertos acústicos y colaboraciones con varios vocalistas, además de ser reconocidos por celebridades por fuera de la escena de la música electrónica, como Madonna, Dido, Radiohead, Coldplay, Miguel Bosé y Britney Spears debido a sus colaboraciones y remixes oficiales.",
+        "avatar": "https://i.postimg.cc/cHmWkGM9/aboveandbeyond.jpg",
+        "foto": "https://i.postimg.cc/GtgCrPfv/above.avif",
+        "imagen": "https://i.postimg.cc/GtgCrPfv/above.avif",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/MEzU1HvBo6Y?si=eNHGcEKt4_e0P0Xu' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Adriatique",
+        "origen": "Zúrich, Suiza",
+        "nacionalidad": "suizo",
+        "genero": [
+            4,
+            5
+        ],
+        "descripcion": "Adriatique es un dúo de DJs suizo conformado por Adrian Shala y Adrian Schweizer. Varían entre el techno y el house, con aires minimalistas, estilo melódico profundo y ritmo sutil e hipnótico.",
+        "avatar": "https://i.postimg.cc/h4s4pT2D/adriatique-avatar.jpg",
+        "foto": "https://i.postimg.cc/59s1w1tj/Adriatique.jpg",
+        "imagen": "https://i.postimg.cc/59s1w1tj/Adriatique.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/w4LRUBFy3pc?si=-ZCsSoxEkkUM5THQ' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Aly & Fila",
+        "origen": "El Cairo,  Egipto",
+        "nacionalidad": "egipciano",
+        "genero": [
+            0,
+            6,
+            7
+        ],
+        "descripcion": "Aly & Fila es un dúo egipcio de DJ's y productores de música trance, formado por Aly Amr Fathalah (Aly) y Fadi Wassef Naguib (Fila), ambos nacidos en 1981. Eran amigos desde la infancia, pero no fue hasta después de enamorarse de la música de Paul van Dyk cuando decidieron construir su primer estudio y empezar a hacer su propia música, a partir de 1999.",
+        "avatar": "https://i.postimg.cc/pLFHbFJn/EJ1-C3lm-XYAAmgr-D.jpg",
+        "foto": "https://i.postimg.cc/HsjmzKJz/72b54337-a2ce-4b50-82cf-0c8125c6e2ce.webp",
+        "imagen": "https://i.postimg.cc/HsjmzKJz/72b54337-a2ce-4b50-82cf-0c8125c6e2ce.webp",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/9TtXI4jk22s?si=o98opwKpTh6SWJgU' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Steve Aoki",
+        "origen": "Miami, Florida, Estados Unidos",
+        "nacionalidad": "estadounidense",
+        "genero": [
+            8,
+            9,
+            3
+        ],
+        "descripcion": "Steven Hiroyuki Aoki, más conocido como Steve Aoki, es un DJ, remezclador y productor discográfico estadounidense de origen japonés; también dueño y fundador del sello musical Dim Mak Records. En 2011, debutó en la lista Top 100 DJs de la revista DJ Mag, ingresando directamente al puesto #42. Tanto en 2016 como en 2022, se ubicó en el séptimo puesto, siendo esta su mejor posición en la lista.",
+        "avatar": "https://i.postimg.cc/8k09pC5d/steve-aoki.jpg",
+        "foto": "https://i.postimg.cc/rwSPNC9g/Steve-Aoki-revela-su-rutina-de-longevidad-y-es-intensa-1024x642.jpg",
+        "imagen": "https://i.postimg.cc/rwSPNC9g/Steve-Aoki-revela-su-rutina-de-longevidad-y-es-intensa-1024x642.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/_36t06naY1Y?si=zJNL3ChuAjXs8Ona' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Hernán Cattaneo",
+        "origen": "Buenos Aires, Argentina",
+        "nacionalidad": "argentino",
+        "genero": [
+            10,
+            13,
+            11
+        ],
+        "descripcion": "Hernán Cattaneo es un DJ y productor argentino, que se dedica principalmente al Progressive House.​ En el año 2018, ganó el premio al mejor DJ en este género otorgado por DJ Awards de Ibiza.",
+        "avatar": "https://i.postimg.cc/VvpVDKTZ/hernan-cattaneo.jpg",
+        "foto": "https://i.postimg.cc/0jTVpbML/Hernan-Cattaneo.png",
+        "imagen": "https://i.postimg.cc/0jTVpbML/Hernan-Cattaneo.png",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/Easqg4SUl2Q?si=8J2b4EsnTV-ZINUg' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Martin Garrix",
+        "origen": "Amstelveen, Países Bajos",
+        "nacionalidad": "neerlandés",
+        "genero": [
+            12,
+            3,
+            9
+        ],
+        "descripcion": "Martijn Gerard Garritsen,​ conocido artísticamente como Martin Garrix, es un DJ, remezclador y productor neerlandés de electro-house y Big Room House; dueño y fundador del sello discográfico STMPD RCRDS. También trabaja bajos los seudónimos Ytram y GRX. Actualmente ocupa el puesto #3 en la encuesta realizada en 2023 por la revista DJ Mag. En 2013, ingresó a la encuesta anual Top 100 DJs de DJ Mag, directamente al puesto #40. En 2014, obtuvo el cuarto puesto y en 2015 fue nombrado tercero. En 2016, 2017, 2018 y 2022 fue elegido por la revista como mejor DJ del mundo, colocándolo en el puesto número #1. En 2019 descendió al segundo puesto y en 2020 al tercero. Alcanzó el reconocimiento internacional gracias a su canción «Animals», lanzado el 17 de junio de 2013, bajo la discográfica Spinnin' Records. La canción alcanzó el puesto #1 en Bélgica y en Reino Unido, y el puesto #3 en Irlanda. El sencillo «Wizard», producido con Jay Hardway, también fue un éxito en numerosos países durante 2013.",
+        "avatar": "https://i.postimg.cc/kXRZBd60/martin-garrix.png",
+        "foto": "https://i.postimg.cc/FHrhcRyf/Martin-Garrix-Ankle.jpg",
+        "imagen": "https://i.postimg.cc/FHrhcRyf/Martin-Garrix-Ankle.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/WKuaujIHBT4?si=XLgmb4CNve1mHr4f' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Peggy Gou",
+        "origen": "Incheon, Bandera de Corea del Sur Corea del Sur",
+        "nacionalidad": "surcoreana",
+        "genero": [
+            13,
+            14,
+            1
+        ],
+        "descripcion": "Peggy Gou, de nombre real Kim Min-ji, es una DJ surcoreana, además de productora musical y diseñadora de moda. Ha lanzado siete EP en sellos discográficos que incluyen Ninja Tune y Phonica Records. En 2019, lanzó su propio sello discográfico independiente, Gudu Records, y lanzó una compilación de DJ-Kicks, DJ-Kicks: Peggy Gou, en !k7 Records.",
+        "avatar": "https://i.postimg.cc/sXn8ZjJr/peggy-gou.webp",
+        "foto": "https://i.postimg.cc/C5pgKLMx/1500-1678742553.jpg",
+        "imagen": "https://i.postimg.cc/C5pgKLMx/1500-1678742553.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/-UOMvxh4MYU?si=nT56f8Y6ylrdEHKn' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "David Guetta",
+        "origen": "",
+        "nacionalidad": "francés",
+        "genero": [
+            15,
+            3,
+            14
+        ],
+        "descripcion": "Pierre David Guetta es un DJ, compositor electrónico y productor francés. Actualmente, ocupa el puesto #1 según la encuesta realizada por DJ Magazine.​Se inició como tal en varias discotecas durante las décadas de 1980 y de 1990, antes de fundar Gum Productions y lanzar su primer álbum: Just a Little More Love.",
+        "avatar": "https://i.postimg.cc/XqpPfR2y/david-guetta.jpg",
+        "foto": "https://i.postimg.cc/Gmgnyj3N/David-Guetta-vuelve-a-Argentina.jpg",
+        "imagen": "https://i.postimg.cc/Gmgnyj3N/David-Guetta-vuelve-a-Argentina.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/_oSRGlOQVL0?si=TFiGoXlzrH5EqWuN' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Richie Hawtin",
+        "origen": "Windsor, Ontario, Canadá",
+        "nacionalidad": "canadiense",
+        "genero": [
+            16,
+            5
+        ],
+        "descripcion": "Richie Hawtin es un DJ, músico y productor británico, naturalizado canadiense. Reside actualmente en Berlín.1​ Está considerado como uno de los máximos exponentes de la música electrónica. Figura entre los artistas de música electrónica más conocidos del mundo,2​3​ gracias a una carrera de más de 30 años. Activo en la escena techno y acid norteamericana desde sus comienzos, ha evolucionado hacia un estilo más minimalista y experimental, privilegiando el uso de las últimas tecnologías de composición y de DJing.",
+        "avatar": "https://i.postimg.cc/wjKrNbD7/richie-hawtin.jpg",
+        "foto": "https://i.postimg.cc/XJwPQK3n/feature-richie-hawtin-ehfh5t.jpg",
+        "imagen": "https://i.postimg.cc/XJwPQK3n/feature-richie-hawtin-ehfh5t.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/M_0jxt-WwHc?si=lHPl_7LUBjBo_T9B' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Miss Monique",
+        "origen": "Ucrania",
+        "nacionalidad": "ucraniana",
+        "genero": [
+            18,
+            10,
+            19
+        ],
+        "descripcion": "Miss Monique obtuvo su fama a través de sus pódcast Mind Games y MiMo Weekly. Miss Monique toca en muchos de los principales festivales de música de baile electrónica de todo el Mundo y es una de las DJ de house progresivo más populares. Sus vídeos de YouTube suelen alcanzar millones de visitas. En diciembre de 2021, Beatport la seleccionó como artista del mes. Lo que la distingue es su cabello, que siempre está teñido de verde.",
+        "avatar": "https://i.postimg.cc/4d4qd7VP/miss-monique.jpg",
+        "foto": "https://i.postimg.cc/Bb7Bgt8q/d61729656b8a55edd3b0958acaf037528cc81b60-1080x608.jpg",
+        "imagen": "https://i.ytimg.com/vi/0AhFghYZQ74/maxresdefault.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/tRcUjaI0M5k?si=ygsSxMKLZ1m4cQEb' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    },
+    {
+        "artista": "Armin van Buuren",
+        "origen": "Leiden, Países Bajos",
+        "nacionalidad": "neerlandés",
+        "genero": [
+            1,
+            20,
+            10
+        ],
+        "descripcion": "Según el ranking elaborado por DJ Mag, ha sido nombrado DJ número uno del mundo en 2007,5​ 2008,6​ 2009,7​ 20108​ y 2012,9​ siendo el único hasta la fecha en conseguir este galardón cuatro veces consecutivas y cinco veces en total.10​11​ Desde 2001 conduce A State of Trance, un programa de radio semanal con una audiencia estimada en millones a lo largo de decenas de países, lo cual lo convierte en uno de los programas de radio más escuchados a nivel internacional. Su álbum de estudio Imagine lanzado en 2008 entró en el número uno de la lista neerlandesa de álbumes, siendo así la primera vez que un artista de música dance obtiene ese lugar en las listas neerlandesas. En 2014, fue nominado para un Premio Grammy por la mejor grabación dance por su sencillo «This Is What It Feels Like» con Trevor Guthrie.12​ En los Estados Unidos, mantiene el récord de álbumes ingresados en la lista Dance/Electronic Albums de Billboard, con veintiuno.13​ Actualmente está ubicado en el puesto n.º 5 de la encuesta realizada en 2023 por la revista DJ Mag.",
+        "avatar": "https://i.postimg.cc/yNy2sXgW/armin-van-buuren.jpg",
+        "foto": "https://i.postimg.cc/jdWHTxw7/ARMIN-VAN-BUUREN-DJ-ENTREVISTA-cortesia-arminvanbuuren-1.jpg",
+        "imagen": "https://i.postimg.cc/jdWHTxw7/ARMIN-VAN-BUUREN-DJ-ENTREVISTA-cortesia-arminvanbuuren-1.jpg",
+        "video": "<iframe class='h-video' src='https://www.youtube.com/embed/DtaZsqKDlBo?si=koFQx6kVHyEoRDN_' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
+    }
+]

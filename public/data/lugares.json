@@ -1,0 +1,52 @@
+[
+    {
+        "lugar": "Mandarine Tent",
+        "dirección": "Av. Costanera Norte y Sarmiento",
+        "ciudad": "CABA"
+    },
+    {
+        "lugar": "Crobar",
+        "dirección": "Av. Coronel Marcelino E. Freyre 3832",
+        "ciudad": "CABA"
+    },
+    {
+        "lugar": "Studio Theater",
+        "dirección": "Rosario de Sta. Fe 272",
+        "ciudad": "Córdoba"
+    },
+    {
+        "lugar": "Blue Velvet",
+        "dirección": "Av. Carlos Colombres 1698",
+        "ciudad": "Rosario"
+    },
+    {
+        "lugar": "Club Morocco",
+        "dirección": "CJH4+9F",
+        "ciudad": "CABA"
+    },
+    {
+        "lugar": "Forja",
+        "dirección": "Mauricio Yadarola 1699",
+        "ciudad": "Córdoba"
+    },
+    {
+        "lugar": "Metropolitano",
+        "dirección": "Junín 501",
+        "ciudad": "Rosario"
+    },
+    {
+        "lugar": "Quinta Las Rosas",
+        "dirección": "Cjón. Escorhiuela 2301",
+        "ciudad": "Mendoza"
+    },
+    {
+        "lugar": "Parque Sarmiento",
+        "dirección": "Av. Dr. Ricardo Balbín 4750",
+        "ciudad": "CABA"
+    },
+    {
+        "lugar": "Movistar Arena",
+        "dirección": "Humboldt 450",
+        "ciudad": "CABA"
+    }
+]

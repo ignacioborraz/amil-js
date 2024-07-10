@@ -1,0 +1,77 @@
+CREATE TABLE artistas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    artista VARCHAR(255) NOT NULL,
+    origen VARCHAR(255),
+    nacionalidad VARCHAR(255),
+    descripcion TEXT,
+    avatar VARCHAR(255),
+    foto VARCHAR(255),
+    imagen VARCHAR(255),
+    video TEXT,
+    genero_id INT,
+    FOREIGN KEY (genero_id) REFERENCES generos(id)
+);
+
+INSERT INTO artistas (artista, origen, nacionalidad, descripcion, avatar, foto, imagen, video, genero_id) VALUES
+('Above & Beyond', 'Londres, Reino Unido', 'inglés', 'Above & Beyond es un reconocido y prestigioso trío británico de Productores, Músicos y DJ\'s de los géneros Trance, Progressive, Downtempo y Alternative formado en 2000 por Jonathan \'Jono\' Grant, Tony McGuinness y Paavo Siljamäki. El grupo ha sido nominado a los premios Grammy dos veces y ha adquirido gran fama y un alto renombre mundial por sus destacadas producciones, conciertos acústicos y colaboraciones con varios vocalistas, además de ser reconocidos por celebridades por fuera de la escena de la música electrónica, como Madonna, Dido, Radiohead, Coldplay, Miguel Bosé y Britney Spears debido a sus colaboraciones y remixes oficiales.', 'https://i.postimg.cc/cHmWkGM9/aboveandbeyond.jpg', 'https://i.postimg.cc/GtgCrPfv/above.avif', 'https://i.postimg.cc/GtgCrPfv/above.avif', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/MEzU1HvBo6Y?si=eNHGcEKt4_e0P0Xu\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Adriatique', 'Zúrich, Suiza', 'suizo', 'Adriatique es un dúo de DJs suizo conformado por Adrian Shala y Adrian Schweizer. Varían entre el techno y el house, con aires minimalistas, estilo melódico profundo y ritmo sutil e hipnótico.', 'https://i.postimg.cc/h4s4pT2D/adriatique-avatar.jpg', 'https://i.postimg.cc/59s1w1tj/Adriatique.jpg', 'https://i.postimg.cc/59s1w1tj/Adriatique.jpg', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/w4LRUBFy3pc?si=-ZCsSoxEkkUM5THQ\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Aly & Fila', 'El Cairo, Egipto', 'egipciano', 'Aly & Fila es un dúo egipcio de DJ\'s y productores de música trance, formado por Aly Amr Fathalah (Aly) y Fadi Wassef Naguib (Fila), ambos nacidos en 1981. Eran amigos desde la infancia, pero no fue hasta después de enamorarse de la música de Paul van Dyk cuando decidieron construir su primer estudio y empezar a hacer su propia música, a partir de 1999.', 'https://i.postimg.cc/pLFHbFJn/EJ1-C3lm-XYAAmgr-D.jpg', 'https://i.postimg.cc/HsjmzKJz/72b54337-a2ce-4b50-82cf-0c8125c6e2ce.webp', 'https://i.postimg.cc/HsjmzKJz/72b54337-a2ce-4b50-82cf-0c8125c6e2ce.webp', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/9TtXI4jk22s?si=o98opwKpTh6SWJgU\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Steve Aoki', 'Miami, Florida, Estados Unidos', 'estadounidense', 'Steven Hiroyuki Aoki, más conocido como Steve Aoki, es un DJ, remezclador y productor discográfico estadounidense de origen japonés; también dueño y fundador del sello musical Dim Mak Records. En 2011, debutó en la lista Top 100 DJs de la revista DJ Mag, ingresando directamente al puesto #42. Tanto en 2016 como en 2022, se ubicó en el séptimo puesto, siendo esta su mejor posición en la lista.', 'https://i.postimg.cc/8k09pC5d/steve-aoki.jpg', 'https://i.postimg.cc/rwSPNC9g/Steve-Aoki-revela-su-rutina-de-longevidad-y-es-intensa-1024x642.jpg', 'https://i.postimg.cc/rwSPNC9g/Steve-Aoki-revela-su-rutina-de-longevidad-y-es-intensa-1024x642.jpg', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/_36t06naY1Y?si=zJNL3ChuAjXs8Ona\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Hernán Cattaneo', 'Buenos Aires, Argentina', 'argentino', 'Hernán Cattaneo es un DJ y productor argentino, que se dedica principalmente al Progressive House.​ En el año 2018, ganó el premio al mejor DJ en este género otorgado por DJ Awards de Ibiza.', 'https://i.postimg.cc/VvpVDKTZ/hernan-cattaneo.jpg', 'https://i.postimg.cc/0jTVpbML/Hernan-Cattaneo.png', 'https://i.postimg.cc/0jTVpbML/Hernan-Cattaneo.png', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/Easqg4SUl2Q?si=8J2b4EsnTV-ZINUg\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Martin Garrix', 'Amstelveen, Países Bajos', 'neerlandés', 'Martijn Gerard Garritsen,​ conocido artísticamente como Martin Garrix, es un DJ, remezclador y productor neerlandés de electro-house y Big Room House; dueño y fundador del sello discográfico STMPD RCRDS. También trabaja bajos los seudónimos Ytram y GRX. Actualmente ocupa el puesto #3 en la encuesta realizada en 2023 por la revista DJ Mag. En 2013, ingresó a la encuesta anual Top 100 DJs de DJ Mag, directamente al puesto #40. En 2014, obtuvo el cuarto puesto y en 2015 fue nombrado tercero. En 2016, 2017, 2018 y 2022 fue elegido por la revista como mejor DJ del mundo, colocándolo en el puesto número #1. En 2019 descendió al segundo puesto y en 2020 al tercero. Alcanzó el reconocimiento internacional gracias a su canción «Animals», lanzado el 17 de junio de 2013, bajo la discográfica Spinnin\' Records. La canción alcanzó el puesto #1 en Bélgica y en Reino Unido, y el puesto #3 en Irlanda. El sencillo «Wizard», producido con Jay Hardway, también fue un éxito en numerosos países durante 2013.', 'https://i.postimg.cc/kXRZBd60/martin-garrix.png', 'https://i.postimg.cc/FHrhcRyf/Martin-Garrix-Ankle.jpg', 'https://i.postimg.cc/FHrhcRyf/Martin-Garrix-Ankle.jpg', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/WKuaujIHBT4?si=XLgmb4CNve1mHr4f\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Peggy Gou', 'Incheon, Bandera de Corea del Sur Corea del Sur', 'surcoreana', 'Peggy Gou, de nombre real Kim Min-ji, es una DJ surcoreana, además de productora musical y diseñadora de moda. Ha lanzado siete EP en sellos discográficos que incluyen Ninja Tune y Phonica Records. En 2019, lanzó su propio sello discográfico, Gudu Records, que lleva la fusión de géneros a la pista de baile. Actualmente ocupa el puesto #9 en la encuesta realizada en 2023 por la revista DJ Mag.', 'https://i.postimg.cc/ZqTsx3mC/peggy-gou.jpg', 'https://i.postimg.cc/3Rfy5ph8/peggy-gou.jpg', 'https://i.postimg.cc/3Rfy5ph8/peggy-gou.jpg', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/Zy1GyGDynGk?si=_PXNCm9NnHH1K5s8\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL),
+('Charlotte de Witte', 'Gante, Bélgica', 'belga', 'Charlotte de Witte es una DJ y productora belga. Es conocida por sus sets de techno minimalista. Anteriormente utilizó el seudónimo de Raving George, debido a que la gente tenía prejuicios con las mujeres DJ\'s.', 'https://i.postimg.cc/tRH00GYT/charlotte-de-witte.jpg', 'https://i.postimg.cc/MHZ4kb7P/charlotte-de-witte.jpg', 'https://i.postimg.cc/MHZ4kb7P/charlotte-de-witte.jpg', '<iframe class=\'h-video\' src=\'https://www.youtube.com/embed/vNSm96XYgfA?si=pklngVoe0eIGjr9e\' title=\'YouTube video player\' frameborder=\'0\' allow=\'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\' referrerpolicy=\'strict-origin-when-cross-origin\' allowfullscreen></iframe>', NULL);
+
+INSERT INTO artistas (artista, genero_id) VALUES
+('Above & Beyond', 1),
+('Above & Beyond', 2),
+('Above & Beyond', 3),
+('Above & Beyond', 4);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(2, 5),
+(2, 6);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(3, 1),
+(3, 7),
+(3, 8);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(4, 9),
+(4, 10),
+(4, 3);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(5, 11),
+(5, 12),
+(5, 13);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(6, 14),
+(6, 3),
+(6, 10);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(7, 13),
+(7, 15),
+(7, 2);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(8, 16),
+(8, 3),
+(8, 15);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(9, 17),
+(9, 6);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(10, 18),
+(10, 11),
+(10, 19);
+
+INSERT INTO artistas (artista_id, genero_id) VALUES
+(11, 2),
+(11, 20),
+(11, 11);

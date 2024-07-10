@@ -1,0 +1,86 @@
+[
+    {
+        "genero": "Trance",
+        "descripcion": "Un género de música electrónica de ritmo rápido, con un enfoque en melodías atmosféricas."
+    },
+    {
+        "genero": "Trance progresivo",
+        "descripcion": "Una subcategoría de trance con énfasis en la progresión y evolución de los sonidos."
+    },
+    {
+        "genero": "Vocal trance",
+        "descripcion": "Trance que incluye vocales prominentes en sus pistas."
+    },
+    {
+        "genero": "Electro house",
+        "descripcion": "Un estilo de house con influencias de música electro."
+    },
+    {
+        "genero": "House",
+        "descripcion": "Un género de música electrónica bailable originado en la década de 1980."
+    },
+    {
+        "genero": "Tecno",
+        "descripcion": "Un género de música electrónica centrado en ritmos repetitivos y sonidos sintéticos."
+    },
+    {
+        "genero": "Uplifting Trance",
+        "descripcion": "Una variante de trance conocida por sus melodías alegres y energéticas."
+    },
+    {
+        "genero": "Chill Out",
+        "descripcion": "Música electrónica relajante y atmosférica."
+    },
+    {
+        "genero": "Dance Music",
+        "descripcion": "Música electrónica diseñada para ser bailada."
+    },
+    {
+        "genero": "EDM",
+        "descripcion": "Electronic Dance Music, un término amplio que engloba varios géneros de música electrónica bailable."
+    },
+    {
+        "genero": "Progressive House",
+        "descripcion": "Una subcategoría de house con un enfoque en la evolución gradual de los elementos sonoros."
+    },
+    {
+        "genero": "Melodic Deep",
+        "descripcion": "Un estilo de música electrónica que combina elementos melódicos y profundos."
+    },
+    {
+        "genero": "Big Room House",
+        "descripcion": "Un subgénero de house caracterizado por su sonido expansivo y pensado para grandes eventos."
+    },
+    {
+        "genero": "Deep House",
+        "descripcion": "Un estilo de house con influencias de jazz, soul y funk."
+    },
+    {
+        "genero": "Tech House",
+        "descripcion": "Una mezcla de techno y house."
+    },
+    {
+        "genero": "Electro Hop",
+        "descripcion": "Un género que combina elementos de electro y hip-hop."
+    },
+    {
+        "genero": "Minimal Techno",
+        "descripcion": "Un subgénero de techno centrado en la simplicidad y repetición."
+    },
+    {
+        "genero": "Techno",
+        "descripcion": "Un género de música electrónica caracterizado por ritmos repetitivos y sonidos sintéticos."
+    },
+    {
+        "genero": "Melodic Techno",
+        "descripcion": "Un estilo de techno con un enfoque en melodías."
+    },
+    {
+        "genero": "Progressive",
+        "descripcion": "Un término general para la música electrónica que enfatiza la evolución y la progresión."
+    },
+    {
+        "genero": "Psico Trance",
+        "descripcion": "Una variante de trance con elementos psicodélicos."
+    }
+]

@@ -8,8 +8,8 @@ app = Flask(__name__)
 mysql = MySQL(app)
 app.config['MYSQLHOST']= 'localhost'
 app.config['MYSQL_USER']= 'root'
-app.config['MYSQL_PASSWORD']= ''
-app.config['MYSQL_PORT']= 3307
+app.config['MYSQL_PASSWORD']= '1234'
+app.config['MYSQL_PORT']= 3306
 app.config['MYSQL_DB']= 'amil'
 
 # Rutas
@@ -28,7 +28,7 @@ def create_genero():
     cursor = conn.cursor()
     cursor.execute(sql, datos)
     conn.commit()
-    return "<h1>Género creado</h1>"
+    return make_response(jsonify(datos), 200)
 
 @app.route('/api/generos')
 def read_genero():
