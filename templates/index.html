@@ -51,6 +51,15 @@
         <section id="proximas" class="container">
             <h2 class="h2-subtitle">Próximas Fiestas</h2>
             <div id="events" class="fiestas-grid">
+                {% for evento in eventos %}
+                <div class="fiesta-item" id="{{evento[0]}}">
+                    <a href="./details.html?id={{evento[0]}}" >
+                        <img src="{{evento[12]}}" alt="{{evento[9]}}" height="224px" class="fiesta-item-img">
+                        <div class="cuadrado"><span class="day">{{evento[1]}}</span><span class="month">{{evento[2]}}</span></div>
+                        <div class="rectangulo"><span class="day">{{evento[9]}}</span></div>
+                    </a>
+                </div>
+                {% endfor %}
             </div>
         </section>
 
@@ -80,7 +89,8 @@
     <button id="scrollToTopButton">&#9650;</button>
     <script src="https://kit.fontawesome.com/8087ddc12b.js" crossorigin="anonymous"></script>
     <script src="./static/js/navbar.js"></script>
-    <script src="./static/js/index.js"></script>
+    {% comment %} <script src="{{url_for('static', filename='js/navbar.js')}}"></script> {% endcomment %}
+    {% comment %} <script src="{{url_for('static', filename='js/index.js')}}"></script> {% endcomment %}
 </body>
 
 </html>
