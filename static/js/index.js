@@ -20,7 +20,7 @@ window.onscroll = function () {
 };
 
 function fetchearData(texto) {
-  fetch("/api/eventos")
+  fetch("http://127.0.0.1:5000/api/eventos")
     .then((res) => {
       if (!res.ok) {
         throw new Error('Network response was not ok ' + res.statusText);
