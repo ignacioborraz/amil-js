@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/navbar.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
+    <title>Fiestas aMil</title>
+  </head>
+
+  <body class="flex column a-center minh-full">
+    <header class="header">
+      <nav class="navbar">
+        <img
+          class="burguer"
+          alt="burguer"
+          id="burguer"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAPhJREFUaEPtmMEOhDAIRPXMT+9Pc96N2ZNx3WAgUNrn2TrMPFrRfVvs2hfzu2F4duIQhvBkCdDSkwG92IEwhCdLgJaeDCiHlrmlVfU9Mn0RMXkx3XQYxfBguCF8A4SWHqxTw8sxEw5XLnoghouCT5OFcFrURUIQvgteVV9FUEyyImKqz0yYWdqUe95NzNLM0t8Enuxh06GQ18RnpfBDq8pItK6ZcLRw1fMwXJV8li6Es5Ku0oHwn48HfsRXteUvXWZpZunns/Rae3ik/eqphdeSJ70OayHcgZKnRgh70uuwFsIdKHlqhLAnvQ5rIdyBkqdGCHvS67D2A2vaQD0pdMqEAAAAAElFTkSuQmCC"
+        />
+        <div class="label">
+          <div class="logo">
+            <a class="logo-anchor" href="./index.html">
+              <i class="size-20 fa-solid fa-champagne-glasses"></i>
+            </a>
+            <div class="logo-span">Fiestas aMil</div>
+          </div>
+          <div class="opts hide" id="opts">
+            <a class="link" href="/">INICIO</a>
+            <a class="link" href="/nuevo-evento">NUEVO EVENTO</a>
+            <a class="link" href="/nuevo-artista">NUEVO ARTISTA</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full grow bg-black">
+      <div class="w-full flex j-center bg-primary">
+        <div
+          class="break-w-full relative pb-30 pt-30 break-pb-0 break-pt-0"
+          id="main"
+        >
+          <img
+            class="w-full h-400 fit my-30 break-pt-30 break-pb-30 grayscale"
+            src="{{artista[4]}}"
+            alt="{{artista[1]}}"
+          />
+          <article
+            class="static break-absolute abs-left break-ml-30 break-pb-30 p-10 bg-primary flex column j-between a-center break-a-start"
+          >
+            <p class="titles size-40">{{artista[1]}}</p>
+          </article>
+          <article
+            class="static break-absolute abs-rigth break-mr-30 break-pt-30 p-10 bg-primary flex column j-between a-center break-a-end"
+          >
+            <p class="titles size-0">{{artista[9]}}</p>
+          </article>
+        </div>
+      </div>
+      <div class="w-full flex j-center bg-secondary">
+        <div class="flex j-evenly wrap break-w-full" id="lineup">
+          <!-- HORARIOS - DESARROLLAR CUANDO TENGAMOS MAS TIEMPO -->
+        </div>
+      </div>
+      <div class="w-full flex j-center bg-secondary p-10">
+        <a
+          class="bg-primary hover-bg-black size-16 p-10 mr-10 buttons round cursor"
+          href="../modificar-artista/{{artista[0]}}"
+          >ACTUALIZAR</a
+        >
+        <a
+          class="bg-primary hover-bg-black size-16 p-10 ml-10 buttons round cursor"
+          href="../eliminar-artista/{{artista[0]}}"
+          >ELIMINAR</a
+        >
+      </div>
+    </main>
+    <footer>
+      <p>Nuestras redes sociales:</p>
+      <div class="social-icons">
+        <a class="icons" href="http://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i
+        ></a>
+        <a class="icons" href="http://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i
+        ></a>
+        <a class="icons" href="http://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i
+        ></a>
+        <a class="icons" href="http://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <div class="links-buttons">
+        <a class="links" href="">Términos y condiciones</a>
+        <a class="links" href="">Preguntas Frecuentes</a>
+        <a class="links" href="">Ayuda</a>
+        <a class="links" href=""><i class="fas fa-question-circle"></i></a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/8087ddc12b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../static/js/navbar.js"></script>
+  </body>
+</html>

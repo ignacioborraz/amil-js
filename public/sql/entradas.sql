@@ -6,7 +6,7 @@ CREATE TABLE entradas (
 );
 
 INSERT INTO entradas (tipo, precio, cantidad) VALUES
-('early', 20000.00, 20000),
-('general', 30000.00, 40000),
-('vip', 50000.00, 10000),
-('backstage', 100000.00, 2000);
+('EARLY', 20000.00, 20000),
+('GENERAL', 30000.00, 40000),
+('VIP', 50000.00, 10000),
+('BACKSTAGE', 100000.00, 2000);

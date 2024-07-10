@@ -1,6 +1,6 @@
 # Importaciones
 from flask import Flask
-from flask import request, jsonify, make_response, render_template
+from flask import request, jsonify, make_response, render_template, redirect
 from flask_mysqldb import MySQL
 
 # Configuración de aplicación y base de datos
@@ -15,8 +15,7 @@ app.config['MYSQL_DB']= 'amil'
 # Rutas de vistas
 @app.route('/')
 def generar_vista_index():
-    try:
-        
+    try:        
         conn = mysql.connection
                 
         sql1 = """
@@ -31,17 +30,20 @@ def generar_vista_index():
                 INNER JOIN artistas ON eventos.artista_id = artistas.id
                 INNER JOIN entradas ON eventos.entrada_id = entradas.id
                 INNER JOIN horarios ON eventos.horario_id = horarios.id
+                ORDER BY 
+                    FIELD(eventos.mes, 'enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'sept.', 'octubre', 'noviembre', 'diciembre'),
+                    eventos.dia;
             """
         
         cursor1 = conn.cursor()
-        cursor1.execute(sql1)        
+        cursor1.execute(sql1)     
         eventos = cursor1.fetchall()
         
         sql2 = "SELECT * FROM artistas"
         
         cursor2 = conn.cursor()
         cursor2.execute(sql2)        
-        artistas = cursor1.fetchall()
+        artistas = cursor2.fetchall()
         
         cursor1.close()
         cursor2.close()
@@ -50,6 +52,294 @@ def generar_vista_index():
     except Exception as e:
         print(f"Error: {e}")
         return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+
+@app.route('/evento/<int:id>')
+def generar_vista_detalle_evento(id):
+    try:        
+        conn = mysql.connection
+                
+        sql1 = """
+                SELECT 
+                    eventos.id, eventos.dia, eventos.mes, eventos.anio, eventos.inicio, eventos.cierre, 
+                    lugares.lugar, lugares.ciudad, lugares.direccion,
+                    artistas.artista, artistas.avatar, artistas.foto, artistas.imagen, artistas.video, artistas.descripcion,
+                    entradas.tipo, entradas.precio, entradas.cantidad,
+                    horarios.desde, horarios.hasta, horarios.artista_id
+                FROM eventos
+                INNER JOIN lugares ON eventos.lugar_id = lugares.id
+                INNER JOIN artistas ON eventos.artista_id = artistas.id
+                INNER JOIN entradas ON eventos.entrada_id = entradas.id
+                INNER JOIN horarios ON eventos.horario_id = horarios.id
+                WHERE eventos.id=%s
+            """
+        
+        cursor1 = conn.cursor()
+        cursor1.execute(sql1, (id,))    
+        evento = cursor1.fetchone()
+        
+        sql2 = "SELECT * FROM entradas"
+            
+        cursor2 = conn.cursor()
+        cursor2.execute(sql2)
+            
+        entradas = cursor2.fetchall()
+           
+        cursor1.close()
+        cursor2.close()
+
+        return render_template('event.html', evento=evento, entradas=entradas)
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+
+@app.route('/artista/<int:id>')
+def generar_vista_detalle_artista(id):
+    try:        
+        conn = mysql.connection
+                
+        sql = "SELECT * FROM artistas WHERE artistas.id=%s"
+        
+        cursor = conn.cursor()
+        cursor.execute(sql, (id,))    
+        artista = cursor.fetchone()
+        
+        cursor.close()
+
+        return render_template('artist.html', artista=artista)
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+
+@app.route('/nuevo-evento')
+def generar_vista_nuevo_evento():
+    try:        
+        return render_template('new_event.html')
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+    
+@app.route('/nuevo-artista')
+def generar_vista_nuevo_artista():
+    try:        
+        return render_template('new_artist.html')
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+    
+@app.route('/modificar-evento/<int:id>')
+def generar_vista_modificacion_evento(id):
+    try:
+        conn = mysql.connection
+                
+        sql1 = """
+                SELECT * FROM eventos WHERE eventos.id=%s
+            """
+        
+        cursor1 = conn.cursor()
+        cursor1.execute(sql1, (id,))    
+        evento = cursor1.fetchone()
+
+        return render_template('update_event.html', evento=evento)
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+    
+@app.route('/modificar-artista/<int:id>')
+def generar_vista_modificacion_artista(id):
+    try:
+        conn = mysql.connection
+                
+        sql = """
+                SELECT * FROM artistas WHERE artistas.id=%s
+            """
+        
+        cursor = conn.cursor()
+        cursor.execute(sql, (id,))    
+        artista = cursor.fetchone()
+
+        return render_template('update_artist.html', artista=artista)
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
+
+@app.route('/eliminar-evento/<int:id>')
+def destroy_event(id):
+
+    sql = "DELETE FROM `amil`.`eventos` WHERE id=%s"
+    
+    conn = mysql.connection
+    cursor = conn.cursor() 
+    cursor.execute(sql, (id,))
+    conn.commit()
+    cursor.close()
+    return redirect('/')
+
+@app.route('/eliminar-artista/<int:id>')
+def destroy_artista(id):
+
+    sql = "DELETE FROM `amil`.`artistas` WHERE id=%s"
+    
+    conn = mysql.connection
+    cursor = conn.cursor() 
+    cursor.execute(sql, (id,))
+    conn.commit()
+    cursor.close()
+    return redirect('/')
+
+# Rutas del template
+@app.route('/api/crear-evento', methods=['POST'])
+def crear_evento():
+    _dia = request.form['dia']
+    _mes = request.form['mes']
+    _anio = request.form['anio']
+    _inicio = request.form['inicio']
+    _cierre = request.form['cierre']
+    _lugar_id = request.form['lugar_id']
+    _artista_id = request.form['artista_id']
+    _entrada_id = request.form['entrada_id']
+    _horario_id = request.form['horario_id']
+    datos= (_dia, _mes, _anio, _inicio, _cierre, _lugar_id, _artista_id, _entrada_id ,_horario_id)
+
+    sql = "INSERT INTO amil.eventos (id, dia, mes, anio, inicio, cierre, lugar_id, artista_id, entrada_id, horario_id) VALUES (NULL, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
+    
+    conn = mysql.connection
+    cursor = conn.cursor() 
+    cursor.execute(sql, datos)
+    conn.commit()
+    cursor.close()
+    return redirect('/')
+
+@app.route('/api/actualizar-evento/<int:id>', methods=['POST'])
+def actualizar_evento(id):
+    _id = id
+    _dia = request.form.get('dia')
+    _mes = request.form.get('mes')
+    _anio = request.form.get('anio')
+    _inicio = request.form.get('inicio')
+    _cierre = request.form.get('cierre')
+    _lugar_id = request.form.get('lugar_id')
+    _artista_id = request.form.get('artista_id')
+    _entrada_id = request.form.get('entrada_id')
+    _horario_id = request.form.get('horario_id')
+
+    conn = mysql.connection
+    cursor = conn.cursor()
+
+    fields = []
+    values = []
+    if _dia:
+        fields.append("dia=%s")
+        values.append(_dia)
+    if _mes:
+        fields.append("mes=%s")
+        values.append(_mes)
+    if _anio:
+        fields.append("anio=%s")
+        values.append(_anio)
+    if _inicio:
+        fields.append("inicio=%s")
+        values.append(_inicio)
+    if _cierre:
+        fields.append("cierre=%s")
+        values.append(_cierre)
+    if _lugar_id:
+        fields.append("lugar_id=%s")
+        values.append(_lugar_id)
+    if _artista_id:
+        fields.append("artista_id=%s")
+        values.append(_artista_id)
+    if _entrada_id:
+        fields.append("entrada_id=%s")
+        values.append(_entrada_id)
+    if _horario_id:
+        fields.append("horario_id=%s")
+        values.append(_horario_id)
+
+    if fields:
+        sql = "UPDATE amil.eventos SET " + ", ".join(fields) + " WHERE id=%s"
+        values.append(_id)
+        cursor.execute(sql, values)
+        conn.commit()
+    
+    cursor.close()
+    return redirect('/')
+
+@app.route('/api/crear-artista', methods=['POST'])
+def crear_artista():
+    _artista = request.form['artista']
+    _imagen = request.form['imagen']
+    _avatar = request.form['avatar']
+    _foto = request.form['foto']
+    _video = request.form['video']
+    _origen = request.form['origen']
+    _nacionalidad = request.form['nacionalidad']
+    _descripcion = request.form['descripcion']
+    _genero_id = request.form['genero_id']
+    datos= (_artista, _imagen, _avatar, _foto, _video, _origen, _nacionalidad, _descripcion, _genero_id)
+
+    sql = "INSERT INTO amil.artistas (id, artista, imagen, avatar, foto, video, origen, nacionalidad, descripcion, genero_id) VALUES (NULL, %s, %s, %s, %s, %s, %s, %s, %s, %s);"
+    
+    conn = mysql.connection
+    cursor = conn.cursor() 
+    cursor.execute(sql, datos)
+    conn.commit()
+    cursor.close()
+    return redirect('/')
+
+@app.route('/api/actualizar-artista/<int:id>', methods=['POST'])
+def actualizar_artista(id):
+    _id = id
+    _artista = request.form.get('artista')
+    _imagen = request.form.get('imagen')
+    _avatar = request.form.get('avatar')
+    _foto = request.form.get('foto')
+    _video = request.form.get('video')
+    _origen = request.form.get('origen')
+    _nacionalidad = request.form.get('nacionalidad')
+    _descripcion = request.form.get('descripcion')
+    _genero_id = request.form.get('genero_id')
+
+    conn = mysql.connection
+    cursor = conn.cursor()
+
+    fields = []
+    values = []
+    if _artista:
+        fields.append("artista=%s")
+        values.append(_artista)
+    if _imagen:
+        fields.append("imagen=%s")
+        values.append(_imagen)
+    if _avatar:
+        fields.append("avatar=%s")
+        values.append(_avatar)
+    if _foto:
+        fields.append("foto=%s")
+        values.append(_foto)
+    if _video:
+        fields.append("video=%s")
+        values.append(_video)
+    if _origen:
+        fields.append("origen=%s")
+        values.append(_origen)
+    if _nacionalidad:
+        fields.append("nacionalidad=%s")
+        values.append(_nacionalidad)
+    if _descripcion:
+        fields.append("descripcion=%s")
+        values.append(_descripcion)
+    if _genero_id:
+        fields.append("genero_id=%s")
+        values.append(_genero_id)
+
+    if fields:
+        sql = "UPDATE amil.artistas SET " + ", ".join(fields) + " WHERE id=%s"
+        values.append(_id)
+        cursor.execute(sql, values)
+        conn.commit()
+    
+    cursor.close()
+    return redirect('/')
 
 # Rutas de géneros
 @app.route('/api/generos', methods=['POST'])
@@ -369,7 +659,7 @@ def read_artistas():
                 'genero_id': artista[9]
             }
         cursor.close()
-        return make_response(jsonify(artistas_list), 200)
+        return make_response(jsonify(artistas), 200)
     else:
         cursor.close()
         return make_response(jsonify({'error': 'Artista no encontrado'}), 404)

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/register.css" />
+    <link rel="preconnect" href="./https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oregano:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./static/img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../static/css/navbar.css" />
+    <link rel="stylesheet" href="../static/css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/8087ddc12b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Fiestas aMil</title>
+  </head>
+
+  <body class="body-register">
+    <header class="header">
+      <nav class="navbar">
+        <img
+          class="burguer"
+          alt="burguer"
+          id="burguer"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAAPhJREFUaEPtmMEOhDAIRPXMT+9Pc96N2ZNx3WAgUNrn2TrMPFrRfVvs2hfzu2F4duIQhvBkCdDSkwG92IEwhCdLgJaeDCiHlrmlVfU9Mn0RMXkx3XQYxfBguCF8A4SWHqxTw8sxEw5XLnoghouCT5OFcFrURUIQvgteVV9FUEyyImKqz0yYWdqUe95NzNLM0t8Enuxh06GQ18RnpfBDq8pItK6ZcLRw1fMwXJV8li6Es5Ku0oHwn48HfsRXteUvXWZpZunns/Rae3ik/eqphdeSJ70OayHcgZKnRgh70uuwFsIdKHlqhLAnvQ5rIdyBkqdGCHvS67D2A2vaQD0pdMqEAAAAAElFTkSuQmCC"
+        />
+        <div class="label">
+          <div class="logo">
+            <a class="logo-anchor" href="./index.html">
+              <i class="size-20 fa-solid fa-champagne-glasses"></i>
+            </a>
+            <div class="logo-span">Fiestas aMil</div>
+          </div>
+          <div class="opts hide" id="opts">
+            <a class="link" href="/">INICIO</a>
+            <a class="link" href="nuevo-evento">NUEVO EVENTO</a>
+            <a class="link" href="nuevo-artista">NUEVO ARTISTA</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="form-wrapper">
+      <form
+        method="post"
+        action="/api/actualizar-evento/{{evento[0]}}"
+        enctype="multipart/form-data"
+      >
+        <h2>Actualizar un evento</h2>
+        <fieldset class="form-control">
+          <input
+            placeholder="Dia: 9"
+            type="number"
+            name="dia"
+            id="dia"
+            value="{{evento[1]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="Mes: MARZO"
+            type="text"
+            name="mes"
+            id="mes"
+            value="{{evento[2]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="Año: 2024"
+            type="number"
+            name="anio"
+            id="anio"
+            value="{{evento[3]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="Hora inicio: 00:00"
+            type="text"
+            name="inicio"
+            id="inicio"
+            value="{{evento[4]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="Hora cierre: 07:00"
+            type="text"
+            name="cierre"
+            id="cierre"
+            value="{{evento[5]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="ID Lugar: 5"
+            type="number"
+            name="lugar_id"
+            id="lugar_id"
+            value="{{evento[6]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="ID Artista: 5"
+            type="number"
+            name="artista_id"
+            id="artista_id"
+            value="{{evento[7]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="ID Entrada: 5"
+            type="number"
+            name="entrada_id"
+            id="entrada_id"
+            value="{{evento[8]}}"
+          />
+        </fieldset>
+        <fieldset class="form-control">
+          <input
+            placeholder="ID Horario: 5"
+            type="number"
+            name="horario_id"
+            id="horario_id"
+            value="{{evento[9]}}"
+          />
+        </fieldset>
+        <input class="button" value="Modificar" type="submit" />
+        <div class="form-help">
+          <a href="#">¿Necesitas Ayuda?</a>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <p>Nuestras redes sociales:</p>
+      <div class="social-icons">
+        <a class="icons" href="http://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook-f"></i
+        ></a>
+        <a class="icons" href="http://www.twitter.com/" target="_blank">
+          <i class="fab fa-twitter"></i
+        ></a>
+        <a class="icons" href="http://www.instagram.com/" target="_blank">
+          <i class="fab fa-instagram"></i
+        ></a>
+        <a class="icons" href="http://www.linkedin.com/" target="_blank">
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <div class="links-buttons">
+        <a class="links" href="">Términos y condiciones</a>
+        <a class="links" href="">Preguntas Frecuentes</a>
+        <a class="links" href="">Ayuda</a>
+        <a class="links" href=""><i class="fas fa-question-circle"></i></a>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/8087ddc12b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../static/js/navbar.js"></script>
+  </body>
+</html>

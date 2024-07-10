@@ -107,7 +107,7 @@ input::placeholder{
     color: #f5f5f5;
 }
 
-form button{
+.button{
     width: 100%;
     padding: 16px 0;
     font-size: 1rem;

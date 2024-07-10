@@ -391,9 +391,12 @@ Menu Hamburguesa*/
 
 .border-primary { border: #3E065F solid 10px }
 .p-10 { padding: 10px }
+.p-15 { padding: 15px }
 .pt-30 { padding-top: 30px }
 .pb-30 { padding-bottom: 30px }
 .m-10 { margin: 10px }
+.mr-10 { margin-right: 10px }
+.ml-10 { margin-left: 10px }
 .mt-10 { margin-top: 10px }
 .ml-30 { margin-left: 30px }
 .mr-30 { margin-right: 30px }
