@@ -67,6 +67,18 @@
             <div class="container">
                 <h2>Lxs artistas más aclamadxs</h2>
                 <div id="top" class="fiestas-scroller">
+                    {% for artista in artistas %}
+                    <a href="./artist.html?id={{artista[0]}}" class="fiesta-item-v2">
+                        <div class="wrapper">
+                            <img src="{{artista[3]}}" alt="{{artista[1]}}" class="fiesta-item-img-v2">
+                        </div>
+                        <div class="fiesta-item-detail-v2">
+                            <p class="fiesta-item-detail-title-v2">{{artista[1]}}</p>
+                            <p class="fiesta-item-detail-subtitle-v2">DJ {{artista[7]}}</p>
+                            <p class="fiesta-item-detail-subtitle-v2"></p>
+                        </div>
+                    </a>
+                    {% endfor %}
                 </div>
             </div>
         </section>
@@ -89,8 +101,6 @@
     <button id="scrollToTopButton">&#9650;</button>
     <script src="https://kit.fontawesome.com/8087ddc12b.js" crossorigin="anonymous"></script>
     <script src="./static/js/navbar.js"></script>
-    {% comment %} <script src="{{url_for('static', filename='js/navbar.js')}}"></script> {% endcomment %}
-    {% comment %} <script src="{{url_for('static', filename='js/index.js')}}"></script> {% endcomment %}
 </body>
 
 </html>
