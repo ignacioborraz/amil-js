@@ -1,10 +1,12 @@
 # Importaciones
 from flask import Flask
-from flask import request, jsonify, make_response
+from flask import request, jsonify, make_response, render_template
 from flask_mysqldb import MySQL
+from flask_cors import CORS, cross_origin
 
 # Configuración de aplicación y base de datos
 app = Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "https://amil.netlify.app/"}})
 mysql = MySQL(app)
 app.config['MYSQLHOST']= 'localhost'
 app.config['MYSQL_USER']= 'root'
@@ -13,6 +15,12 @@ app.config['MYSQL_PORT']= 3307
 app.config['MYSQL_DB']= 'amil'
 
 # Rutas
+
+# Rutas de vistas
+@app.route('/')
+def generar_vista_index():
+    return render_template('index.html')
+
 # Rutas de géneros
 @app.route('/api/generos', methods=['POST'])
 def create_genero():
@@ -745,6 +753,74 @@ def create_evento():
     cursor.close()
     
     return make_response(jsonify(created_evento), 201)
+
+@app.route('/api/eventos')
+def read_eventos():
+    try:
+        sql = """
+                SELECT 
+                    eventos.id, eventos.dia, eventos.mes, eventos.anio, eventos.inicio, eventos.cierre, 
+                    lugares.lugar, lugares.ciudad, lugares.direccion,
+                    artistas.artista, artistas.avatar, artistas.foto, artistas.imagen, artistas.video, artistas.descripcion,
+                    entradas.tipo, entradas.precio, entradas.cantidad,
+                    horarios.desde, horarios.hasta, horarios.artista_id
+                FROM eventos
+                INNER JOIN lugares ON eventos.lugar_id = lugares.id
+                INNER JOIN artistas ON eventos.artista_id = artistas.id
+                INNER JOIN entradas ON eventos.entrada_id = entradas.id
+                INNER JOIN horarios ON eventos.horario_id = horarios.id
+            """
+        
+        conn = mysql.connection
+        cursor = conn.cursor()
+        cursor.execute(sql)
+        
+        eventos = cursor.fetchall()
+        
+        eventos_list = []
+        for evento in eventos:
+            evento_dict = {
+                'id': evento[0],
+                'dia': evento[1],
+                'mes': evento[2],
+                'anio': evento[3],
+                'inicio': evento[4],
+                'cierre': evento[5],
+                'lugar': {
+                        'nombre': evento[6],
+                        'ciudad': evento[7],
+                        'direccion': evento[8]
+                    },
+                'artista': {
+                        'nombre': evento[9],
+                        'avatar': evento[10],
+                        'foto': evento[11],
+                        'imagen': evento[12],
+                        'video': evento[13],
+                        'descripcion': evento[14]
+                    },
+                'entrada': {
+                        'tipo': evento[15],
+                        'precio': evento[16],
+                        'cantidad': evento[17]
+                    },
+                'horario': {
+                        'desde': evento[18],
+                        'hasta': evento[19],
+                        'artista_id': evento[20]
+                }
+            }
+            eventos_list.append(evento_dict)
+        
+        cursor.close()
+        
+        if eventos_list:
+            return make_response(jsonify(eventos_list), 200)
+        else:
+            return make_response(jsonify({'error': 'No se encontraron eventos'}), 404)
+    except Exception as e:
+        print(f"Error: {e}")
+        return make_response(jsonify({'error': 'Internal Server Error'}), 500)
 
 @app.route('/api/eventos/<int:id>')
 def read_evento_by_id(id):
