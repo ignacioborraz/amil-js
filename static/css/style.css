@@ -67,6 +67,10 @@ a{
     padding: 0px 160px;
     animation: appear 5s ease forwards;
     opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes appear{
@@ -420,4 +424,8 @@ Menu Hamburguesa*/
 
 @media (min-width: 1200px) {
     .break-w-full { width: 1200px }
+}
+
+.register {
+    width: 120px !important;
 }
